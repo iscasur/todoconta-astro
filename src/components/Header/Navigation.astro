@@ -22,16 +22,10 @@ const menuList = [
     },
 ]
 ---
-<div class="hidden md:block">
-  <nav>
-      <ul class="flex">
-          {
-              menuList.map((item) => (
-                  <li class="px-6">
-                    <a href={item.url}>{item.title}</a>
-                  </li>
-              ))
-          }
-      </ul>
-    </nav>
+<div class="nav-links">
+    {
+        menuList.map((item) => (
+          <a href={item.url}>{item.title}</a>
+        ))
+    }
 </div>

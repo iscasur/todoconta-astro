@@ -1,5 +1,6 @@
 :root {
     --primary-color: #022F3E;
+    --secondary-color: #ffebc6;
 }
 
 html {
@@ -12,6 +13,37 @@ body {
 
 a {
     @apply dark:text-white;
+}
+
+/* Nav styles */
+.hamburger {
+    @apply pr-8 cursor-pointer;
+}
+
+.hamburger .line {
+    @apply block w-8 h-1 mb-2 bg-gray-800 dark:bg-white;
+}
+
+.nav-links {
+    @apply hidden;
+}
+
+.nav-links.is-expanded {
+    @apply block;
+}
+
+.nav-links a {
+    @apply block text-center uppercase py-4 no-underline;
+}
+
+.nav-links a:hover,
+.nav-links a:focus {
+    /*background-color: var(--primary-color);*/
+    @apply text-white dark:text-[var(--primary-color)] bg-[var(--primary-color)] dark:bg-[var(--secondary-color)];
+}
+
+.is-expanded {
+    display: unset;
 }
 
 
