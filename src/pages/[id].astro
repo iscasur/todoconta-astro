@@ -24,7 +24,7 @@ const pageTitle = `${seoTitle ? seoTitle : title} - Todoconta`
   <div class="mx-auto md:max-w-3xl p-4">
     <section>
       <article class="flex gap-6 flex-col">
-        <time datetime={publishedDate}>{date}</time>
+        <time datetime={publishedDate.toLocaleString()}>{date}</time>
         <h1 class="prose text-5xl dark:prose-invert">{title}</h1>
         <p class="lead">{description}</p>
         {img && (
