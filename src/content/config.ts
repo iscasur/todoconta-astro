@@ -20,7 +20,7 @@ const product = defineCollection({
     slug: z.string(),
     price: z.number(),
     lowPrice: z.number().optional(),
-    date: z.string(),
+    publishedDate: z.date(),
     rate: z.number(),
     img: z.string().url(),
   }),
@@ -30,7 +30,7 @@ const newsletter = defineCollection({
   schema: z.object({
     title: z.string(),
     description: z.string().optional(),
-    date: z.string(),
+    publishedDate: z.date(),
     img: z.string().url(),
   }),
 });
@@ -40,7 +40,7 @@ const podcast = defineCollection({
     title: z.string(),
     description: z.string(),
     slug: z.string(),
-    date: z.string(),
+    publishedDate: z.date(),
     url: z.string().url(),
   }),
 });
