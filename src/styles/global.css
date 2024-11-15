@@ -1,0 +1,25 @@
+:root {
+    --primary-color: #022F3E;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    @apply flex flex-col my-0 mx-auto w-full text-base h-screen;
+}
+
+a {
+    @apply dark:text-white;
+}
+
+
+/* Post */
+time {
+    @apply text-gray-400;
+}
+
+.lead {
+    @apply text-gray-400 text-2xl italic;
+}

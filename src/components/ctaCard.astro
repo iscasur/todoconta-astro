@@ -1,0 +1,18 @@
+---
+interface Props {
+    title?: string;
+    description: string;
+    href: string;
+}
+
+const {title, description, href} = Astro.props
+---
+<section>
+  <div class="rounded bg-yellow-100">
+    <a href={href}>
+        {title && <h2>{title}</h2>}
+        <p>{description}</p>
+        <button>Mas información</button>
+    </a>
+  </div>
+</section>

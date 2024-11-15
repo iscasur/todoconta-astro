@@ -1,0 +1,37 @@
+---
+const menuList = [
+    {
+        title: 'Blog',
+        url: '/blog'
+    },
+    {
+        title: 'Tienda',
+        url: '/tienda'
+    },
+    {
+        title: 'Newsletter',
+        url: '/newsletter'
+    },
+    {
+        title: 'Podcast',
+        url: '/podcast'
+    },
+    {
+        title: 'Contacto',
+        url: '/contacto'
+    },
+]
+---
+<div class="hidden md:block">
+  <nav>
+      <ul class="flex">
+          {
+              menuList.map((item) => (
+                  <li class="px-6">
+                    <a href={item.url}>{item.title}</a>
+                  </li>
+              ))
+          }
+      </ul>
+    </nav>
+</div>
