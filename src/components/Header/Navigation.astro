@@ -21,8 +21,10 @@ const menuList = [
         url: '/contacto'
     },
 ]
+
+const { styles } = Astro.props
 ---
-<div class="nav-links">
+<div class=`nav-links ${styles}`>
     {
         menuList.map((item) => (
           <a href={item.url}>{item.title}</a>
