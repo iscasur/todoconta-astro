@@ -1,6 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import {getCollection, render} from 'astro:content'
+import Subscribe from "../components/Subscribe/Subscribe.astro";
 
 export async function getStaticPaths() {
     const posts = await getCollection('posts');
@@ -35,6 +36,7 @@ const pageTitle = `${seoTitle ? seoTitle : title} - Todoconta`
             </figcaption>
           </figure>
         )}
+        <Subscribe />
         <div class="prose dark:prose-invert prose-lg">
           <Content/>
         </div>

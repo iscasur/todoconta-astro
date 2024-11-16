@@ -18,7 +18,7 @@ a {
 
 /* Nav styles */
 .hamburger {
-    @apply pr-8 cursor-pointer md:hidden;
+    @apply pl-8 cursor-pointer md:hidden;
 }
 
 .hamburger .line {
