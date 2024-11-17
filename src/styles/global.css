@@ -61,5 +61,5 @@ time {
 }
 
 .lead {
-    @apply text-gray-400 text-xl italic;
+    @apply text-gray-400 text-lg italic;
 }
