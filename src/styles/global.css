@@ -18,11 +18,11 @@ a {
 
 /* Nav styles */
 .hamburger {
-    @apply pl-8 cursor-pointer md:hidden;
+    @apply pl-4 cursor-pointer md:hidden;
 }
 
 .hamburger .line {
-    @apply block w-8 h-1 mb-2 bg-gray-800 dark:bg-white last:mb-0;
+    @apply block w-6 h-0.5 mb-2 bg-gray-800 dark:bg-white last:mb-0;
 }
 
 .nav-links {
