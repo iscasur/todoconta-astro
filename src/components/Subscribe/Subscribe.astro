@@ -35,7 +35,7 @@ const activeSubscriberCount = response.text()
     import {API_URL_SENDY, API_KEY_SENDY, LIST_ID_SENDY} from 'astro:env/client'
 
     const form = document.getElementById('subscribeForm') as HTMLFormElement;
-    const messageContainer = document.getElementById('message');
+    const messageContainer = document.getElementById('message') as HTMLElement;
 
     form.addEventListener('submit', async (e) => {
         e.preventDefault();
@@ -43,7 +43,7 @@ const activeSubscriberCount = response.text()
         const data = {
             api_key: API_KEY_SENDY,
             list: LIST_ID_SENDY,
-            email: formData.get('email').toString() || '',
+            email: formData.get('email')?.toString() || '',
             boolean: 'true',
         }
 
