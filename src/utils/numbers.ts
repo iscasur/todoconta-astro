@@ -14,7 +14,6 @@ export async function getFormattedSubscribersCount(
   try {
     const count = await value;
     const countNumber = parseInt(count, 10);
-    console.log(countNumber);
     return formatSubscribersCount(countNumber);
   } catch (e) {
     console.error("Error resolving promise", e);
