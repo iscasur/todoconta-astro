@@ -15,7 +15,7 @@ const response = await fetch(url, {
 })
 const activeSubscriberCount = response.text()
 ---
-<div class="prose prose-invert dark:prose bg-[var(--primary-color)] dark:bg-gray-100 border-t border-b p-4 -mx-4 md:hidden">
+<div class="prose prose-invert dark:prose bg-primary dark:bg-gray-100 border-t border-b p-4 -mx-4 md:hidden">
   <h3>Suscríbete nuestro newsletter</h3>
   <p>Únete a los {getFormattedSubscribersCount(activeSubscriberCount)} que ya lo han hecho</p>
   <form id="subscribeForm">
@@ -24,7 +24,7 @@ const activeSubscriberCount = response.text()
       <input type="email" id="email" name="email" placeholder="Correo electrónico" required
              class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"/>
     </label>
-    <input type="submit" value="¡Me uno!" class="w-full mt-2 rounded-md bg-[#00D6BC] text-white h-10 uppercase"/>
+    <input type="submit" value="¡Me uno!" class="w-full mt-2 rounded-md bg-secondary-green text-white h-10 uppercase"/>
     <span id="message"></span>
   </form>
   <p>

@@ -8,16 +8,16 @@ const posts = defineCollection({
     description: z.string(),
     publishedDate: z.date(),
     img: z.string().url().optional().nullable(),
-    // tags: z.array(z.string()),
-    // category: z.array(z.string()),
+    tags: z.array(z.string()).optional().nullable(),
+    categories: z.array(z.string()).optional().nullable(),
   }),
 });
 
-const product = defineCollection({
+const products = defineCollection({
+  type: "content",
   schema: z.object({
     title: z.string(),
     description: z.string(),
-    slug: z.string(),
     price: z.number(),
     lowPrice: z.number().optional(),
     publishedDate: z.date(),
@@ -47,7 +47,7 @@ const podcast = defineCollection({
 
 export const collections = {
   posts,
-  product,
+  products,
   newsletter,
   podcast,
 };

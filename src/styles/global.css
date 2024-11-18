@@ -47,7 +47,7 @@ a {
 
 .nav-links.mobile a:hover,
 .nav-links.mobile a:focus {
-    @apply text-white dark:text-[var(--primary-color)] bg-[var(--primary-color)] dark:bg-[var(--secondary-color)];
+    @apply text-white dark:text-primary bg-primary dark:bg-secondary-golden;
 }
 
 .is-expanded {

@@ -1,0 +1,9 @@
+---
+import Layout from "../layouts/Layout.astro";
+import {getCollection} from "astro:content";
+
+const products = await getCollection("products");
+
+const pageTitle = "Tienda - Todoconta";
+---
+<Layout title={pageTitle}></Layout>
