@@ -6,4 +6,10 @@ const products = await getCollection("products");
 
 const pageTitle = "Tienda - Todoconta";
 ---
-<Layout title={pageTitle}></Layout>
+<Layout title={pageTitle}>
+    {products.map((item) => (
+        <a href={item.slug}>
+          <h2>{item.data.title}</h2>
+        </a>
+    ))}
+</Layout>
