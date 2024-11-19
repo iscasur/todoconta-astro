@@ -1,11 +1,10 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import Home from "../components/Home/Home.astro";
 
 const pageTitle = "Todoconta - Información contable (México)."
 ---
 
-<Layout title={pageTitle}>
-  <div class="container mx-auto px-4">
-    <h1>Hola Todoconta!</h1>
-  </div>
+<Layout title={pageTitle} isLandingPage={true} hasFooter={true}>
+  <Home />
 </Layout>
