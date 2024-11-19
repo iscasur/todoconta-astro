@@ -1,0 +1,15 @@
+---
+import Layout from "../layouts/Layout.astro";
+import {getCollection} from "astro:content";
+
+const products = await getCollection("products");
+
+const pageTitle = "Tienda - Todoconta";
+---
+<Layout title={pageTitle}>
+    {products.map((item) => (
+        <a href={item.slug}>
+          <h2>{item.data.title}</h2>
+        </a>
+    ))}
+</Layout>

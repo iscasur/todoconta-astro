@@ -3,13 +3,14 @@ import Layout from "../layouts/Layout.astro";
 import {getCollection} from 'astro:content'
 
 const posts = await getCollection('posts');
+const sortedPosts = posts.sort((a, b) => new Date(b.data.publishedDate).getTime() - new Date(a.data.publishedDate).getTime());
 
 const pageTitle = "Blog - Todoconta"
 ---
 <Layout title={pageTitle}>
   <div class="md:container md:mx-auto p-4">
     <section class="grid md:grid-cols-3 gap-4">
-      {posts.map((item) => (
+      {sortedPosts.map((item) => (
           <a href={item.slug}>
             <article class="prose dark:prose-invert">
               <h2>{item.data.title}</h2>
