@@ -41,7 +41,7 @@ a {
 }
 
 .nav-links a {
-    @apply px-8 md:first:pl-0;
+    @apply px-6 md:first:pl-0;
 }
 
 .nav-links.mobile {
