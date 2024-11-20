@@ -19,6 +19,14 @@ a {
     @apply dark:text-white;
 }
 
+.scroll-container::-webkit-scrollbar {
+  display: none;
+}
+
+.scroll-container {
+  scrollbar-width: none; /* Firefox */
+}
+
 /* Nav styles */
 .hamburger {
     @apply pl-4 cursor-pointer md:hidden;

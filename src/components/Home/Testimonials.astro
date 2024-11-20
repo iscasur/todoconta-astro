@@ -1,9 +1,39 @@
 ---
+const testimonials = [
+    {
+        author: 'Rafael Alonzo',
+        description: 'Gracias a Israel, mi contabilidad es más eficiente y sin estrés. ¡Recomendado 100%!'
+    },
+    {
+        author: 'Ulises Calvillo',
+        description: 'Con el contador Israel pude resolver todas mis dudas fiscales de forma clara y sencilla. Ahora cumplo con mis obligaciones sin preocupaciones. ¡Excelente servicio!'
+    },
+    {
+        author: 'Carlos Hernández',
+        description: 'La automatización que me ayudaron a implementar ha transformado mi negocio. Todo es más rápido y organizado. Sin duda, los recomendaría.'
+    },
+    {
+        author: 'Ana García',
+        description: 'Siempre pensé que la contabilidad era complicada, pero Israel me demostró que no tiene por qué serlo. Su asesoría es invaluable.'
+    },
+    {
+        author: 'Gabriela Sánchez',
+        description: 'El apoyo de Israel fue clave para organizar mi contabilidad. Ahora puedo enfocarme en hacer crecer mi negocio con tranquilidad.'
+    },
+    {
+        author: 'Roberto Martínez',
+        description: 'Nunca imaginé que cumplir con mis obligaciones fiscales pudiera ser tan sencillo. TodoConta es una solución confiable y profesional.'
+    },
+]
 ---
 <section class="text-center py-12">
-  <h2 class="text-2xl font-bold mb-6">Lo que Dicen Nuestros Clientes</h2>
-  <div class="text-gray-600 italic">
-    <p>"Gracias a TodoConta, mi contabilidad es más eficiente y sin estrés. ¡Recomendado 100%!</p>
-    <h4 class="mt-4 font-bold">– Ing. Rafael Alonzo</h4>
+  <h2 class="text-2xl font-bold mb-6">Nuestros Clientes</h2>
+  <div class="scroll-container snap-x snap-mandatory md:snap-none overflow-x-auto flex md:grid md:grid-cols-3 gap-6 pb-4 text-gray-600 italic">
+    {testimonials.map(testimonial => (
+        <div class="snap-center min-w-[85%] max-w-sm ">
+          <p>{testimonial.description}</p>
+          <h4 class="mt-4 font-bold">– {testimonial.author}</h4>
+        </div>
+    ))}
   </div>
 </section>

@@ -1,0 +1,29 @@
+---
+export interface SnapItem {
+    title: string,
+    description: string,
+    href: string,
+    cta: string,
+    image?: string,
+    badge?: string,
+    customClass?: string,
+}
+interface Props {
+    data: SnapItem[]
+}
+
+const {data} = Astro.props
+---
+<div class="scroll-container snap-x snap-mandatory md:snap-none overflow-x-auto flex md:grid md:grid-cols-3 gap-6 pb-4">
+    {data.map((item) => (
+      <div class=`snap-center bg-white shadow-md rounded-lg p-6 min-w-[85%] max-w-sm ${item.customClass || ''}`>
+          {item.image && <img src={item.image} alt={item.title} class="w-full h-40 object-cover rounded-t-lg mb-4"/>}
+          {item.badge &&
+            <span class="bg-green-500 text-white text-sm font-semibold px-2 py-1 rounded">{item.badge}</span>}
+        <h3 class="text-xl font-semibold mb-2">{item.title}</h3>
+        <p class="text-gray-600">{item.description}</p>
+        <a href={item.href}
+           class="mt-4 inline-block bg-primary text-white py-2 px-4 rounded-lg hover:bg-[#00566e]">{item.cta}</a>
+      </div>
+    ))}
+</div>
