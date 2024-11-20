@@ -1,16 +1,30 @@
 ---
 import {getCollection} from "astro:content";
+import Carousel from "../Carousel.astro";
+
+interface SnapItem {
+    title: string,
+    description: string,
+    href: string,
+    cta: string,
+    image?: string,
+    badge?: string,
+    customClass?: string,
+}
 
 const posts = await getCollection("posts");
 const sortedPosts = posts.sort((a, b) => new Date(b.data.publishedDate).getTime() - new Date(a.data.publishedDate).getTime()).slice(0, 3);
+const data = sortedPosts.map((item) => {
+  return {
+    title: item.data.title,
+    description: item.data.description,
+    href: `/${item.slug}`,
+    cta: 'Leer mas…',
+    image: item.data.img,
+  } as SnapItem;
+})
 ---
 <section class="text-center py-12">
-  <h2 class="text-2xl font-bold mb-6">Últimos Artículos del Blog</h2>
-  <div class="grid gap-4 md:grid-cols-3">
-      {
-          sortedPosts.map((item) => (
-            <a href={item.slug} class="block bg-white shadow-md rounded-lg p-4 hover:bg-gray-100">{item.data.title}</a>
-          ))
-      }
-  </div>
+  <h2 class="text-2xl font-bold mb-6 dark:text-gray-300">Últimos Artículos</h2>
+      <Carousel data={data} />
 </section>

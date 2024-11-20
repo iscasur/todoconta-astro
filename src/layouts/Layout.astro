@@ -8,11 +8,11 @@ interface Props {
 	hasFooter?: boolean;
 }
 
-const { title, isLandingPage = false, hasFooter = true } = Astro.props;
+const { title, isLandingPage = false } = Astro.props;
 ---
 
 <!doctype html>
-<html lang="es">
+<html lang="es" class="scroll-smooth">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="description" content="Astro description" />
@@ -35,7 +35,7 @@ const { title, isLandingPage = false, hasFooter = true } = Astro.props;
 		<main>
 		  <slot />
 		</main>
-	{!isLandingPage || hasFooter && <Footer />}
+	{!isLandingPage && <Footer />}
 		<script>
 			import '../scripts/menu.js'
 		</script>
