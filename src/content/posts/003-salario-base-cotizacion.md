@@ -1,11 +1,12 @@
 ---
-title: "Salario base de cotización"
-seoTitle: ""
-description: "El Salario Base de Cotización (SBC), es el promedio anual de lo que gana diariamente un empleado. Se integra con los pagos hechos en efectivo o prestación."
-publishedDate: "2011-08-11 12:46:00"
+title: Salario base de cotización
+slug: salario-base-cotizacion
+seoTitle: 
+description: El Salario Base de Cotización (SBC), es el promedio anual de lo que gana diariamente un empleado. Se integra con los pagos hechos en efectivo o prestación.
+publishedDate: 2011-08-11
 tags: ["SBC"]
 categories: ["Seguridad social"]
-img: "https://todoconta.com/wp-content/uploads/2023/01/dinero-mexicano-billetes.jpeg"
+img: https://todoconta.com/wp-content/uploads/2023/01/dinero-mexicano-billetes.jpeg
 ---
 
 

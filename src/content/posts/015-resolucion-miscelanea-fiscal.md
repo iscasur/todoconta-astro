@@ -1,11 +1,12 @@
 ---
-title: "Importancia de la Resolución Miscelánea Fiscal"
-seoTitle: ""
-description: "Tener en cuenta la Resolución Miscelánea Fiscal nos permite reducir el impacto de la carga fiscal y administrativa en México."
-publishedDate: "2019-04-25 14:27:00"
+title: Importancia de la Resolución Miscelánea Fiscal
+slug: resolucion-miscelanea-fiscal
+seoTitle: 
+description: Tener en cuenta la Resolución Miscelánea Fiscal nos permite reducir el impacto de la carga fiscal y administrativa en México.
+publishedDate: 2019-04-25
 tags: ["RMF"]
 categories: ["Impuestos"]
-img: "https://todoconta.com/wp-content/uploads/2023/02/documento-legal-texto-libro-book-coffee-pen.jpeg"
+img: https://todoconta.com/wp-content/uploads/2023/02/documento-legal-texto-libro-book-coffee-pen.jpeg
 ---
 
 

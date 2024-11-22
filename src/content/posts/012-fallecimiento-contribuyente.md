@@ -1,11 +1,12 @@
 ---
-title: "Fallecimiento del contribuyente y sus efectos fiscales"
-seoTitle: ""
-description: "Las obligaciones fiscales y sus efectos fiscales siguen presenten aun después del fallecimiento del contribuyente."
-publishedDate: "2015-08-25 14:07:00"
+title: Fallecimiento del contribuyente y sus efectos fiscales
+slug: fallecimiento-contribuyente
+seoTitle: 
+description: Las obligaciones fiscales y sus efectos fiscales siguen presenten aun después del fallecimiento del contribuyente.
+publishedDate: 2015-08-25
 tags: ["Fallecimiento"]
 categories: ["Impuestos"]
-img: "https://todoconta.com/wp-content/uploads/2023/01/planta-muerta-gris.jpeg"
+img: https://todoconta.com/wp-content/uploads/2023/01/planta-muerta-gris.jpeg
 ---
 
 

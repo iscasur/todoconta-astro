@@ -1,11 +1,12 @@
 ---
-title: "Coeficiente de utilidad para pagos provisionales"
-seoTitle: ""
-description: "El coeficiente de utilidad es el factor que muestra el porcentaje de utilidad que obtuvo la empresa ejercicio anterior."
-publishedDate: "2013-03-23 03:00:00"
-tags: ["C\u00e1lculos", "ISR"]
+title: Coeficiente de utilidad para pagos provisionales
+slug: coeficiente-utilidad
+seoTitle: 
+description: El coeficiente de utilidad es el factor que muestra el porcentaje de utilidad que obtuvo la empresa ejercicio anterior.
+publishedDate: 2013-03-23
+tags: ["Cálculos", "ISR"]
 categories: ["Declaraciones y pagos"]
-img: "https://todoconta.com/wp-content/uploads/2023/01/math-calculos-factores-matematicas-formulas.jpeg"
+img: https://todoconta.com/wp-content/uploads/2023/01/math-calculos-factores-matematicas-formulas.jpeg
 ---
 
 

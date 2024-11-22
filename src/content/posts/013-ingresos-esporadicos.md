@@ -1,11 +1,12 @@
 ---
-title: "Ingresos esporádicos por servicios profesionales"
-seoTitle: ""
-description: "Las personas con ingresos esporádicos por servicios profesionales, presentan declaraciones cuando obtengan efectivamente dichos ingresos."
-publishedDate: "2017-09-17 00:54:00"
-tags: ["Personas F\u00edsicas", "Servicios"]
+title: Ingresos esporádicos por servicios profesionales
+slug: ingresos-esporadicos
+seoTitle: 
+description: Las personas con ingresos esporádicos por servicios profesionales, presentan declaraciones cuando obtengan efectivamente dichos ingresos.
+publishedDate: 2017-09-17
+tags: ["Personas Físicas", "Servicios"]
 categories: ["Declaraciones y pagos"]
-img: "https://todoconta.com/wp-content/uploads/2023/01/declaracion-impuestos-servicios-profesionales.jpeg"
+img: https://todoconta.com/wp-content/uploads/2023/01/declaracion-impuestos-servicios-profesionales.jpeg
 ---
 
 

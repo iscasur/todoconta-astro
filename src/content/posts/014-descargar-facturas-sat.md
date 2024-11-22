@@ -1,11 +1,12 @@
 ---
-title: "Descargar facturas del SAT"
-seoTitle: ""
-description: "Descubre cómo puedes descargar facturas completamente gratis, directamente desde la página del SAT en cuestión de segundos."
-publishedDate: "2018-08-09 01:37:00"
+title: Descargar facturas del SAT
+slug: descargar-facturas-sat
+seoTitle: 
+description: Descubre cómo puedes descargar facturas completamente gratis, directamente desde la página del SAT en cuestión de segundos.
+publishedDate: 2018-08-09
 tags: ["SAT"]
 categories: ["Comprobantes fiscales"]
-img: "https://todoconta.com/wp-content/uploads/2023/02/facturas-sat-descargar-xml-computadora.jpeg"
+img: https://todoconta.com/wp-content/uploads/2023/02/facturas-sat-descargar-xml-computadora.jpeg
 ---
 
 

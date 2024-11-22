@@ -1,11 +1,12 @@
 ---
-title: "Plazo para conservar la contabilidad de las empresas"
-seoTitle: ""
-description: "La normatividad mexicana en temas contables nos establece el plazo que tenemos por obligación para conservar la contabilidad."
-publishedDate: "2014-05-09 12:35:00"
+title: Plazo para conservar la contabilidad de las empresas
+slug: conservar-contabilidad-plazo
+seoTitle: 
+description: La normatividad mexicana en temas contables nos establece el plazo que tenemos por obligación para conservar la contabilidad.
+publishedDate: 2014-05-09
 tags: ["CFF", "Registros contables"]
 categories: ["Contabilidad"]
-img: "https://todoconta.com/wp-content/uploads/2023/01/time-plazos-tiempo.jpeg"
+img: https://todoconta.com/wp-content/uploads/2023/01/time-plazos-tiempo.jpeg
 ---
 
 

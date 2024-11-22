@@ -1,11 +1,12 @@
 ---
-title: "Firma Electrónica Avanzada"
-seoTitle: ""
-description: "La firma electrónica es un conjunto de datos biométricos, para legitimar e identificar al emisor como si de su firma autógrafa se tratara."
-publishedDate: "2019-07-14 15:15:00"
-tags: ["Firma electr\u00f3nica", "Servicios"]
+title: Firma Electrónica Avanzada
+slug: firma-electronica
+seoTitle: 
+description: La firma electrónica es un conjunto de datos biométricos, para legitimar e identificar al emisor como si de su firma autógrafa se tratara.
+publishedDate: 2019-07-14
+tags: ["Firma electrónica", "Servicios"]
 categories: ["Impuestos"]
-img: "https://todoconta.com/wp-content/uploads/2023/01/electronic-code-firma-electronica.jpeg"
+img: https://todoconta.com/wp-content/uploads/2023/01/electronic-code-firma-electronica.jpeg
 ---
 
 

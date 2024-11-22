@@ -1,11 +1,12 @@
 ---
-title: "Certificado de sello digital"
-seoTitle: ""
-description: "Tanto personas físicas como morales debemos contar con un certificado de sello digital para emitir comprobantes fiscales."
-publishedDate: "2013-12-26 02:21:00"
+title: Certificado de sello digital
+slug: certificado-sello-digital-csd
+seoTitle: 
+description: Tanto personas físicas como morales debemos contar con un certificado de sello digital para emitir comprobantes fiscales.
+publishedDate: 2013-12-26
 tags: ["SAT", "CSD", "Certifica", "Servicios"]
 categories: ["Comprobantes fiscales"]
-img: "https://todoconta.com/wp-content/uploads/2019/10/code-vsc-digital-electronic-web-coding.jpg"
+img: https://todoconta.com/wp-content/uploads/2019/10/code-vsc-digital-electronic-web-coding.jpg
 ---
 
 

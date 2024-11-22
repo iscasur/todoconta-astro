@@ -1,11 +1,12 @@
 ---
-title: "El contribuyente no está obligado a integrar la contabilidad de forma especial"
-seoTitle: ""
-description: "El contribuyente está obligado a integrar su contabilidad conforme a las leyes fiscales y no de forma especial como suele solicitarla la autoridad."
-publishedDate: "2020-02-12 11:59:00"
+title: El contribuyente no está obligado a integrar la contabilidad de forma especial
+slug: integrar-contabilidad-especial
+seoTitle: 
+description: El contribuyente está obligado a integrar su contabilidad conforme a las leyes fiscales y no de forma especial como suele solicitarla la autoridad.
+publishedDate: 2020-02-12
 tags: ["CFF", "Registros contables"]
 categories: ["Contabilidad"]
-img: "https://todoconta.com/wp-content/uploads/2023/01/retro-calculator-desk-yellow.jpeg"
+img: https://todoconta.com/wp-content/uploads/2023/01/retro-calculator-desk-yellow.jpeg
 ---
 
 

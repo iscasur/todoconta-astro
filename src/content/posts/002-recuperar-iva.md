@@ -1,11 +1,12 @@
 ---
-title: "Descubre cómo recuperar tu saldo a favor de IVA"
-seoTitle: ""
-description: "Ante la existencia de saldo a favor de IVA, la ley contempla 3 posibilidades en las que podemos recuperar este impuesto."
-publishedDate: "2011-06-08 02:16:00"
-tags: ["IVA", "Saldo a favor", "Devoluci\u00f3n", "Compensaci\u00f3n", "Servicios"]
+title: Descubre cómo recuperar tu saldo a favor de IVA
+slug: recuperar-iva
+seoTitle: 
+description: Ante la existencia de saldo a favor de IVA, la ley contempla 3 posibilidades en las que podemos recuperar este impuesto.
+publishedDate: 2011-06-08
+tags: ["IVA", "Saldo a favor", "Devolución", "Compensación", "Servicios"]
 categories: ["Declaraciones y pagos"]
-img: "https://todoconta.com/wp-content/uploads/2023/01/retro-calculator-desk-yellow.jpeg"
+img: https://todoconta.com/wp-content/uploads/2023/01/retro-calculator-desk-yellow.jpeg
 ---
 
 

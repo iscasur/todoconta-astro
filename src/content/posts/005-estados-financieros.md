@@ -1,11 +1,12 @@
 ---
-title: "¿Qué son los Estados Financieros?"
-seoTitle: ""
-description: "Los estados financieros son el resultado del proceso contable y sirven para transmitir la información necesaria para tomar decisiones."
-publishedDate: "2012-05-01 02:13:00"
+title: ¿Qué son los Estados Financieros?
+slug: estados-financieros
+seoTitle: 
+description: Los estados financieros son el resultado del proceso contable y sirven para transmitir la información necesaria para tomar decisiones.
+publishedDate: 2012-05-01
 tags: []
 categories: ["Contabilidad"]
-img: "https://todoconta.com/wp-content/uploads/2023/01/firmar-documento-estados-financieros-legal.jpeg"
+img: https://todoconta.com/wp-content/uploads/2023/01/firmar-documento-estados-financieros-legal.jpeg
 ---
 
 

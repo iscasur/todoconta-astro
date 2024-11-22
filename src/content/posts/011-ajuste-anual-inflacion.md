@@ -1,11 +1,12 @@
 ---
-title: "Ajuste anual por inflación"
-seoTitle: ""
-description: "Este ajuste anual se debe al reconocimiento de la inflación ocurrida en el país, que afecta directamente los créditos y deudas de la empresa."
-publishedDate: "2015-03-19 11:35:00"
-tags: ["ISR", "Deducciones autorizadas", "Inflaci\u00f3n"]
+title: Ajuste anual por inflación
+slug: ajuste-anual-inflacion
+seoTitle: 
+description: Este ajuste anual se debe al reconocimiento de la inflación ocurrida en el país, que afecta directamente los créditos y deudas de la empresa.
+publishedDate: 2015-03-19
+tags: ["ISR", "Deducciones autorizadas", "Inflación"]
 categories: ["Impuestos"]
-img: "https://todoconta.com/wp-content/uploads/2023/01/calculos-trabajando-finanzas-contadores-analisis.jpeg"
+img: https://todoconta.com/wp-content/uploads/2023/01/calculos-trabajando-finanzas-contadores-analisis.jpeg
 ---
 
 

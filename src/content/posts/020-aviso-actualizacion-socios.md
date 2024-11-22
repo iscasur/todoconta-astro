@@ -1,11 +1,12 @@
 ---
-title: "Aviso de actualización de socios y accionistas"
-seoTitle: ""
-description: "Las empresas deberán presentar un aviso de actualización de socios o accionistas cada vez que exista algún cambio respecto a estos."
-publishedDate: "2020-06-24 13:29:00"
+title: Aviso de actualización de socios y accionistas
+slug: aviso-actualizacion-socios
+seoTitle: 
+description: Las empresas deberán presentar un aviso de actualización de socios o accionistas cada vez que exista algún cambio respecto a estos.
+publishedDate: 2020-06-24
 tags: ["CFF", "Servicios"]
-categories: ["Tr\u00e1mites y servicios"]
-img: "https://todoconta.com/wp-content/uploads/2023/02/socios-accionistas-trabajadores-partners-shareholders-worker.jpeg"
+categories: ["Trámites y servicios"]
+img: https://todoconta.com/wp-content/uploads/2023/02/socios-accionistas-trabajadores-partners-shareholders-worker.jpeg
 ---
 
 

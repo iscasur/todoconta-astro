@@ -1,11 +1,12 @@
 ---
-title: "Descargar Comprobantes Fiscales vía Web Service del SAT"
-seoTitle: ""
-description: "El SAT liberó el servicio denominado Web Service, una nueva forma para descargar los comprobantes fiscales en grandes cantidades mediante solicitudes."
-publishedDate: "2019-10-24 15:09:00"
-tags: ["Firma electr\u00f3nica", "XML"]
+title: Descargar Comprobantes Fiscales vía Web Service del SAT
+slug: web-service-sat
+seoTitle: 
+description: El SAT liberó el servicio denominado Web Service, una nueva forma para descargar los comprobantes fiscales en grandes cantidades mediante solicitudes.
+publishedDate: 2019-10-24
+tags: ["Firma electrónica", "XML"]
 categories: ["Comprobantes fiscales"]
-img: "https://todoconta.com/wp-content/uploads/2019/10/code-vsc-digital-electronic-web-coding.jpg"
+img: https://todoconta.com/wp-content/uploads/2019/10/code-vsc-digital-electronic-web-coding.jpg
 ---
 
 

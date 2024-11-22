@@ -1,11 +1,12 @@
 ---
-title: "Deducciones Personales"
-seoTitle: ""
-description: "Las deducciones personales son un derecho que puede beneficiarte con la posibilidad de generar un saldo a favor en tu declaración anual."
-publishedDate: "2013-05-11 15:00:00"
+title: Deducciones Personales
+slug: deducciones-personales
+seoTitle: 
+description: Las deducciones personales son un derecho que puede beneficiarte con la posibilidad de generar un saldo a favor en tu declaración anual.
+publishedDate: 2013-05-11
 tags: ["Deducciones personales", "Impuestos 101"]
 categories: ["Impuestos"]
-img: "https://todoconta.com/wp-content/uploads/2023/01/impuestos-comprobantes-fiscales-deducciones-calculadora.jpeg"
+img: https://todoconta.com/wp-content/uploads/2023/01/impuestos-comprobantes-fiscales-deducciones-calculadora.jpeg
 ---
 
 

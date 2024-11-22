@@ -1,11 +1,12 @@
 ---
-title: "¿Cuándo se deben pagar los impuestos en México?"
-seoTitle: ""
-description: "Saber cuándo debes pagar los impuestos te evitará los recargos y actualizaciones, y en algunos casos el pago multas."
-publishedDate: "2011-11-22 01:32:00"
+title: ¿Cuándo se deben pagar los impuestos en México?
+slug: cuando-pagar-impuestos
+seoTitle: 
+description: Saber cuándo debes pagar los impuestos te evitará los recargos y actualizaciones, y en algunos casos el pago multas.
+publishedDate: 2011-11-22
 tags: ["IVA", "ISR", "Servicios", "Impuestos 101"]
 categories: ["Impuestos"]
-img: "https://todoconta.com/wp-content/uploads/2023/01/calendario-tiempo-time-dias.jpg"
+img: https://todoconta.com/wp-content/uploads/2023/01/calendario-tiempo-time-dias.jpg
 ---
 
 

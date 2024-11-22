@@ -1,28 +1,30 @@
 ---
+import {WA_NUMBER} from "astro:env/client";
+
 const menuList = [
     {
         title: 'Blog',
         url: '/blog'
     },
-    {
-        title: 'Tienda',
-        url: '/tienda'
-    },
-    {
-        title: 'Newsletter',
-        url: '/newsletter'
-    },
-    {
-        title: 'Podcast',
-        url: '/podcast'
-    },
-    {
-        title: 'Contacto',
-        url: '/contacto'
-    },
+    // {
+    //     title: 'Tienda',
+    //     url: '/tienda'
+    // },
+    // {
+    //     title: 'Newsletter',
+    //     url: '/newsletter'
+    // },
+    // {
+    //     title: 'Podcast',
+    //     url: '/podcast'
+    // },
+    // {
+    //     title: 'Contacto',
+    //     url: '/contacto'
+    // },
 ]
 
-const { styles } = Astro.props
+const {styles} = Astro.props
 ---
 <div class=`nav-links ${styles}`>
     {
@@ -30,4 +32,7 @@ const { styles } = Astro.props
           <a href={item.url}>{item.title}</a>
         ))
     }
+  <a href=`https://wa.me/${WA_NUMBER}/?text=¡Hola Israel! Me interesa en una sesión 1 a 1 contigo.`
+     class="text-center text-white bg-secondary-green font-semibold py-2 px-4 md:py-2 md:rounded-lg border border-solid border-secondary-green hover:bg-transparent hover:text-secondary-green">Agenda
+    tu Asesoría</a>
 </div>

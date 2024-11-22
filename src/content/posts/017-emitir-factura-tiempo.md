@@ -1,11 +1,12 @@
 ---
-title: "¿Cuánto tiempo tengo para emitir un comprobante fiscal?"
-seoTitle: ""
-description: "Debemos emitir una factura por las operaciones que realicemos, sin embargo, existe una duda sobre cuánto tiempo tenemos para hacerlo."
-publishedDate: "2019-08-08 18:10:00"
+title: ¿Cuánto tiempo tengo para emitir un comprobante fiscal?
+slug: emitir-factura-tiempo
+seoTitle: 
+description: Debemos emitir una factura por las operaciones que realicemos, sin embargo, existe una duda sobre cuánto tiempo tenemos para hacerlo.
+publishedDate: 2019-08-08
 tags: ["CFDI", "CFF"]
 categories: ["Comprobantes fiscales"]
-img: "https://todoconta.com/wp-content/uploads/2023/01/calendario-tiempo-time-dias.jpg"
+img: https://todoconta.com/wp-content/uploads/2023/01/calendario-tiempo-time-dias.jpg
 ---
 
 
