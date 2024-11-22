@@ -3,6 +3,7 @@ import Layout from "../layouts/Layout.astro";
 import {getCollection, render} from 'astro:content'
 import PostCTA from "../components/blog/PostCTA.astro";
 import AuthorBio from "../components/blog/AuthorBio.astro";
+import {WA_NUMBER} from "astro:env/client";
 
 export async function getStaticPaths() {
     const posts = await getCollection('posts');
@@ -29,19 +30,24 @@ const pageTitle = `${seoTitle ? seoTitle : title} - Todoconta`
         <h1 class="prose text-2xl dark:prose-invert">{title}</h1>
         <time datetime={publishedDate.toLocaleString()} class="text-xs">{date}</time>
         <p class="lead">{description}</p>
-        {img && (
-          <figure>
-            <img src={img} alt={title}/>
-            <figcaption class="hidden">
-                {description}
-            </figcaption>
-          </figure>
-        )}
+          {img && (
+            <figure>
+              <img src={img} alt={title}/>
+              <figcaption class="hidden">
+                  {description}
+              </figcaption>
+            </figure>
+          )}
         <div class="prose dark:prose-invert prose-lg">
           <Content/>
         </div>
-        <PostCTA title={title} />
-        <AuthorBio />
+        <PostCTA title="¿Dudas sobre este tema?"
+                 description="Si necesitas ayuda o quieres que implemente este servicio por ti, no dudes en ponerte en contacto conmigo."
+                 ctaText="Contáctame Ahora"
+                 ctaLink=`https://wa.me/${WA_NUMBER}/?text=¡Hola Israel! Acabo de leer "${title}" ¿Agendamos una sesión 1:1?`
+                 showSubscription={true}
+        />
+        <AuthorBio/>
       </article>
     </section>
   </div>
