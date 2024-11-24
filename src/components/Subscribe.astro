@@ -3,18 +3,20 @@ interface Props {
     title: string,
     description?: string,
     disclaimer?: string,
+    listId: string,
 }
 
 const {
     title,
     description,
     disclaimer,
+    listId,
 } = Astro.props;
 ---
 <div>
   <h4 class="text-lg font-bold">{title}</h4>
   <p>{description}</p>
-  <form id="subscribeForm" class="mt-4 flex flex-col items-center space-y-4">
+  <form id="subscribeForm" data-list-id={listId} class="mt-4 flex flex-col items-center space-y-4">
     <label for="email">
       <span class="hidden">Email</span>
       <input type="email" id="email" name="email" placeholder="Correo electrónico" required

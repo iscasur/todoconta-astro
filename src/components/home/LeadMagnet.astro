@@ -1,6 +1,8 @@
 ---
 import Subscribe from "../Subscribe.astro";
+import { LIST_ID_SENDY } from "astro:env/client";
+
 ---
 <section class="text-center py-6 mt-6 rounded-lg">
-  <Subscribe title="¡Suscríbete y recibe una Plantilla Gratuita!" />
+  <Subscribe title="¡Suscríbete y recibe una Plantilla Gratuita!" listId={LIST_ID_SENDY} />
 </section>
