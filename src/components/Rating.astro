@@ -8,6 +8,6 @@ interface Props {
 
 const { rating, maxRating = 5} = Astro.props
 ---
-<div class="rating mt-2">
+<div class="rating">
     {generateStars(rating, maxRating)} {rating}/{maxRating}
 </div>
