@@ -1,14 +1,16 @@
-import { API_URL_SENDY, API_KEY_SENDY, LIST_ID_SENDY } from "astro:env/client";
+import { API_URL_SENDY, API_KEY_SENDY } from "astro:env/client";
 
 const form = document.getElementById("subscribeForm") as HTMLFormElement;
 const messageContainer = document.getElementById("message") as HTMLElement;
+
+const listId = form.dataset.listId || "";
 
 form.addEventListener("submit", async (e) => {
   e.preventDefault();
   const formData = new FormData(form);
   const data = {
     api_key: API_KEY_SENDY,
-    list: LIST_ID_SENDY,
+    list: listId,
     email: formData.get("email")?.toString() || "",
     boolean: "true",
   };

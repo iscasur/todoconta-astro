@@ -1,0 +1,13 @@
+---
+import {generateStars} from "../utils/generateStars";
+
+interface Props {
+    rating: number;
+    maxRating?: number;
+}
+
+const { rating, maxRating = 5} = Astro.props
+---
+<div class="rating">
+    {generateStars(rating, maxRating)} {rating}/{maxRating}
+</div>
