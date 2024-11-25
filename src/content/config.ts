@@ -17,12 +17,22 @@ const products = defineCollection({
   type: "content",
   schema: z.object({
     title: z.string(),
+    seoTitle: z.string().optional().nullable(),
+    rating: z.number(),
+    price: z.string(),
     description: z.string(),
-    price: z.number(),
-    lowPrice: z.number().optional(),
-    publishedDate: z.date(),
-    rate: z.number(),
     img: z.string().url(),
+    video: z.string().url().optional().nullable(),
+    testimonials: z
+      .array(
+        z.object({
+          author: z.string(),
+          comment: z.string(),
+          rating: z.number(),
+        })
+      )
+      .optional(),
+    categories: z.array(z.string()).optional().nullable(),
   }),
 });
 

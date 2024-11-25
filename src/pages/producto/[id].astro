@@ -1,0 +1,73 @@
+---
+import {getCollection, render} from "astro:content";
+import Layout from "../../layouts/Layout.astro";
+import Rating from "../../components/Rating.astro";
+export async function getStaticPaths() {
+    const products = await getCollection('products')
+
+    return products.map(product => ({
+            params: {
+                id: product.slug,
+            },
+            props: {
+                product
+            }
+        }
+    ))
+}
+
+const {product} = Astro.props;
+const {data} = product
+const {title, seoTitle, rating, price, img, description, video, testimonials} = data;
+
+const {Content} = await render(product)
+const pageTitle = `${seoTitle ? seoTitle : title} - Todoconta`;
+---
+<Layout title={pageTitle}>
+  <div class="container mx-auto md:max-w-3xl p-4 pb-16 md:pb-32">
+    <article class="flex gap-4 flex-col">
+      <section class="md:grid md:grid-cols-2 md:gap-10 md:items-center">
+        <div class="columns-1">
+          <figure>
+            <img src={img} alt={`Imagen del producto: ${title}`} class="w-full h-auto rounded-lg"/>
+            <figcaption class="hidden">{seoTitle ? seoTitle : title}</figcaption>
+          </figure>
+        </div>
+        <div class="columns-1">
+          <header>
+            <h1 class="text-2xl md:text-4xl font-bold mt-4">{title}</h1>
+            <Rating rating={rating} />
+          </header>
+
+          <p class="text-lg font-bold mt-2">${price} MXN</p>
+
+          <p class="text-gray-600 mt-2">{description}</p>
+
+          <div class="cta-buttons mt-4 flex flex-col">
+            <button class="bg-primary text-white py-2 px-4 rounded-lg hover:bg-primary-light">Comprar</button>
+            <a class="text-primary underline mt-2 block">Descargar demo</a>
+          </div>
+        </div>
+
+      </section>
+
+      <section class="product-description prose dark:prose-invert mt-8">
+        <h2 class="text-xl font-semibold">Mas información</h2>
+        <Content/>
+      </section>
+
+        {video && (
+          <section class="product-video mt-8">
+
+          </section>
+        )}
+
+        {(testimonials && testimonials.length > 0) && (
+          <section class="product-testimonials mt-8">
+
+          </section>
+        )}
+
+    </article>
+  </div>
+</Layout>
