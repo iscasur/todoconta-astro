@@ -292,12 +292,12 @@ En relación a este tema, una de las primeras acciones que toma la autoridad es 
 
 
 
-Empezó siendo reglas de [Resolución Miscelánea Fiscal](https://todoconta.com/resolucion-miscelanea-fiscal-importancia/) para después escalarlo a un nivel superior quedando establecido en el artículo 17\-H del Código Fiscal de la Federación.
+Empezó siendo reglas de [Resolución Miscelánea Fiscal](/resolucion-miscelanea-fiscal-importancia/) para después escalarlo a un nivel superior quedando establecido en el artículo 17\-H del Código Fiscal de la Federación.
 
 
 
 
-En este artículo se mencionan las situaciones por las que la autoridad podría dejarte sin efectos, algunas un tanto obvias, como por ejemplo, el [fallecimiento del contribuyente](https://blog.todoconta.com/fallecimiento-contribuyente/).
+En este artículo se mencionan las situaciones por las que la autoridad podría dejarte sin efectos, algunas un tanto obvias, como por ejemplo, el [fallecimiento del contribuyente](/.com/fallecimiento-contribuyente/).
 
 
 

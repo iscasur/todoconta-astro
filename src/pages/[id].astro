@@ -5,6 +5,13 @@ import PostCTA from "../components/blog/PostCTA.astro";
 import AuthorBio from "../components/blog/AuthorBio.astro";
 import {WA_NUMBER} from "astro:env/client";
 
+interface MetaTagsProps {
+    description?: string;
+    keywords?: string[];
+    image?: string;
+    type?: 'article' | 'product' | 'website';
+}
+
 export async function getStaticPaths() {
     const posts = await getCollection('posts');
 
@@ -20,14 +27,21 @@ export async function getStaticPaths() {
 
 const {post} = Astro.props;
 const {data} = post;
-const {title, publishedDate, description, img, seoTitle} = data;
+const {title, publishedDate, description, img, seoTitle, tags} = data;
 
 const date = publishedDate.toLocaleDateString('es-MX', {month: 'long', day: 'numeric', year: 'numeric'});
 
 const {Content} = await render(post)
 const pageTitle = `${seoTitle ? seoTitle : title} - Todoconta`
+
+const metaTags: MetaTagsProps = {
+    description: description,
+    keywords: tags,
+    image: img,
+    type: 'article',
+}
 ---
-<Layout title={pageTitle}>
+<Layout title={pageTitle} metaTags={metaTags}>
   <div class="container mx-auto md:max-w-3xl p-4 pb-16 md:pb-32">
     <article class="flex gap-4 flex-col">
       <header>

@@ -2,6 +2,7 @@
 import Layout from "../layouts/Layout.astro";
 import {getCollection} from "astro:content";
 import Rating from "../components/Rating.astro";
+import {formatPrice} from "../utils/numbers";
 
 const products = await getCollection("products");
 
@@ -10,16 +11,24 @@ const pageTitle = "Tienda - Todoconta";
 <Layout title={pageTitle}>
   <div class="md:container md:mx-auto p-4">
     <section class="grid md:grid-cols-3 gap-4">
-        {products.map((item) => (
+        {products.map((item) => {
 
-          <article class="prose dark:prose-invert">
-            <img src={item.data.img} alt={item.data.title} class="w-full h-auto rounded-lg"/>
-            <h2>{item.data.title}</h2>
-            <Rating rating={item.data.rating}/>
-            <p>{item.data.price}</p>
-            <a href=`producto/${item.slug}` class="mt-4 inline-block bg-primary text-white py-2 px-4 rounded-lg hover:bg-primary-light">Comprar</a>
-          </article>
-        ))}
+            const {title, img, rating, price} = item.data;
+
+            return (
+              <a href=`producto/${item.slug}`>
+                <article class="prose dark:prose-invert">
+                  <img src={img} alt={title} class="w-full h-auto rounded-lg"/>
+                  <h2>{title}</h2>
+                  <Rating rating={rating}/>
+                  <p>{formatPrice(price)} MXN</p>
+                  <p
+                     class="mt-4 inline-block bg-primary text-white py-2 px-4 rounded-lg hover:bg-primary-light no-underline">Mas
+                    información</p>
+                </article>
+              </a>
+            )
+        })}
     </section>
   </div>
 </Layout>

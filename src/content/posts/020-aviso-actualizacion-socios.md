@@ -42,7 +42,7 @@ En relación al aviso de actualización de socios y accionistas, este viene esta
 
 
 
-Al respecto la [Resolución Miscelánea Fiscal](https://todoconta.com/resolucion-miscelanea-fiscal/) 2020 (RMF) estable en la regla 2\.4\.19 que debemos observar la ficha 295/CFF "*Aviso de actualización de socios o accionistas*" contenida en el Anexo 1\-A, para realizar este trámite dentro de los 30 días hábiles siguientes a aquél en que se realice el supuesto antes mencionado.
+Al respecto la [Resolución Miscelánea Fiscal](/resolucion-miscelanea-fiscal/) 2020 (RMF) estable en la regla 2\.4\.19 que debemos observar la ficha 295/CFF "*Aviso de actualización de socios o accionistas*" contenida en el Anexo 1\-A, para realizar este trámite dentro de los 30 días hábiles siguientes a aquél en que se realice el supuesto antes mencionado.
 
 
 

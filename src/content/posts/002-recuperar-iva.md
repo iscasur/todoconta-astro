@@ -131,7 +131,7 @@ Si bien la ley no menciona nada al respecto, en la práctica **si lo está devo
 
 
 
-Es ahí donde la autoridad solicita información adicional. Esto para asegurarse que hemos acreditado el IVA correctamente y que está debidamente [soportado con comprobantes fiscales](https://todoconta.com/extraer-informacion-cfdi/).
+Es ahí donde la autoridad solicita información adicional. Esto para asegurarse que hemos acreditado el IVA correctamente y que está debidamente [soportado con comprobantes fiscales](/extraer-informacion-cfdi/).
 
 
 
@@ -165,7 +165,7 @@ El detalle aquí es que dado el Impuesto al Valor Agregado es de carácter mensu
 
 
 
-Un ejemplo de ello es cuando el ISR se determina mediante [coeficiente de utilidad](https://todoconta.com/coeficiente-utilidad-pagos-provisionales/) y este es muy alto, entonces se obtienen grandes cantidades a cargo por este impuesto y por otro lado en el mismo período se genera un saldo a favor de IVA.
+Un ejemplo de ello es cuando el ISR se determina mediante [coeficiente de utilidad](/coeficiente-utilidad-pagos-provisionales/) y este es muy alto, entonces se obtienen grandes cantidades a cargo por este impuesto y por otro lado en el mismo período se genera un saldo a favor de IVA.
 
 
 

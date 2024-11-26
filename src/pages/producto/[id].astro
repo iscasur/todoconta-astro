@@ -2,6 +2,16 @@
 import {getCollection, render} from "astro:content";
 import Layout from "../../layouts/Layout.astro";
 import Rating from "../../components/Rating.astro";
+import {formatPrice} from "../../utils/numbers";
+import {WA_NUMBER} from "astro:env/client";
+
+interface MetaTagsProps {
+    description?: string;
+    keywords?: string[];
+    image?: string;
+    type?: 'article' | 'product' | 'website';
+}
+
 export async function getStaticPaths() {
     const products = await getCollection('products')
 
@@ -18,12 +28,27 @@ export async function getStaticPaths() {
 
 const {product} = Astro.props;
 const {data} = product
-const {title, seoTitle, rating, price, img, description, video, testimonials} = data;
+const {title, seoTitle, rating, price, img, description, tags, video, testimonials, hasDemo} = data;
 
 const {Content} = await render(product)
-const pageTitle = `${seoTitle ? seoTitle : title} - Todoconta`;
+const pageTitle = `${seoTitle ? seoTitle : title} - Todoconta`
+
+const metaTags: MetaTagsProps = {
+    description: description,
+    keywords: tags,
+    image: img,
+    type: 'product',
+}
+
+const whatsAppMessageToBuy = encodeURIComponent(
+    `Hola, tengo interés en el producto *${title}*. ¿Podrías darme más información sobre cómo comprarlo?`
+)
+
+const whatsAppMessageToDownload = encodeURIComponent(
+    `Hola, me interesa probar el demo del producto *${title}*. ¿Podrías enviármelo o indicarme cómo descargarlo?`
+)
 ---
-<Layout title={pageTitle}>
+<Layout title={pageTitle} metaTags={metaTags}>
   <div class="container mx-auto md:max-w-3xl p-4 pb-16 md:pb-32">
     <article class="flex gap-4 flex-col">
       <section class="md:grid md:grid-cols-2 md:gap-10 md:items-center">
@@ -36,23 +61,43 @@ const pageTitle = `${seoTitle ? seoTitle : title} - Todoconta`;
         <div class="columns-1 prose dark:prose-invert">
           <header>
             <h1 class="text-2xl md:text-4xl font-bold mt-4 mb-2">{title}</h1>
-            <Rating rating={rating} />
+            <Rating rating={rating}/>
           </header>
 
-          <p class="text-lg font-bold mt-2">${price} MXN <span class="text-sm font-light">IVA inc.</span></p>
+          <p class="text-lg font-bold mt-2">{formatPrice(price)} MXN <span class="text-sm font-light">IVA inc.</span>
+          </p>
 
           <p class="mt-2">{description}</p>
 
-          <div class="cta-buttons mt-4 flex flex-col">
-            <button class="bg-primary text-white py-2 px-4 rounded-lg hover:bg-primary-light dark:bg-secondary-green">Comprar</button>
-            <a class="text-primary text-center underline mt-2 block">Descargar demo</a>
+          <div class="cta-buttons mt-4 flex flex-col sticky">
+            <a href={`https://wa.me/${WA_NUMBER}?text=${whatsAppMessageToBuy}`}
+               class="bg-secondary-green text-white no-underline text-center py-2 px-6 rounded-lg hover:bg-primary-light inline-block dark:bg-secondary-green"
+               target="_blank"
+               rel="noopener noreferrer"
+               onclick={() => gtag('event', 'click', {
+                   event_category: 'WhastApp',
+                   event_label: title,
+                   value: price,
+               })}
+            >Comprar</a>
+              {hasDemo && (
+                <a href={`https://wa.me/${WA_NUMBER}?text=${whatsAppMessageToDownload}`}
+                   class="text-primary text-center no-underline mt-4 block"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   onclick={() => gtag('event', 'click', {
+                       event_category: 'Demo',
+                       event_label: title,
+                   })}
+                >Solicitar demo</a>
+              )}
           </div>
         </div>
 
       </section>
 
       <section class="product-description prose dark:prose-invert mt-8">
-        <h2 class="text-xl font-semibold">Mas información</h2>
+        <h2 class="text-2xl font-semibold">Mas información</h2>
         <Content/>
       </section>
 
