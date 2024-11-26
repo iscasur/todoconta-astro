@@ -20,10 +20,13 @@ const pageTitle = "Tienda - Todoconta";
                 <article class="prose dark:prose-invert">
                   <img src={img} alt={title} class="w-full h-auto rounded-lg"/>
                   <h2>{title}</h2>
-                  <Rating rating={rating}/>
-                  <p>{formatPrice(price)} MXN</p>
+                    {rating && (
+                      <Rating rating={rating}/>
+                    )}
+                  <p class="text-lg font-bold mt-2">{formatPrice(price)} MXN</p>
                   <p
-                     class="mt-4 inline-block bg-primary text-white py-2 px-4 rounded-lg hover:bg-primary-light no-underline">Mas
+                    class="mt-4 inline-block bg-primary text-white py-2 px-4 rounded-lg hover:bg-primary-light no-underline dark:bg-secondary-green">
+                    Mas
                     información</p>
                 </article>
               </a>

@@ -27,7 +27,7 @@ const url = new URL(Astro.url.pathname, Astro.site);
 
 		<!--Meta Tags SEO-->
 		<meta name="description" content={metaTags?.description || ''} />
-		<meta name="keywords" content={metaTags?.keywords || ''} />
+		<meta name="keywords" content={Array.isArray(metaTags?.keywords) ? metaTags?.keywords.join(', ') : metaTags?.keywords || ''} />
 		<meta name="author" content="TodoConta">
 
 		<!--Open Graph-->

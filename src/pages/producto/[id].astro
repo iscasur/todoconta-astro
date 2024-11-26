@@ -28,14 +28,13 @@ export async function getStaticPaths() {
 
 const {product} = Astro.props;
 const {data} = product
-const {title, seoTitle, rating, price, img, description, tags, video, testimonials, hasDemo} = data;
+const {title, seoTitle, rating, price, img, description, video, testimonials, hasDemo} = data;
 
 const {Content} = await render(product)
 const pageTitle = `${seoTitle ? seoTitle : title} - Todoconta`
 
 const metaTags: MetaTagsProps = {
     description: description,
-    keywords: tags,
     image: img,
     type: 'product',
 }
@@ -61,7 +60,8 @@ const whatsAppMessageToDownload = encodeURIComponent(
         <div class="columns-1 prose dark:prose-invert">
           <header>
             <h1 class="text-2xl md:text-4xl font-bold mt-4 mb-2">{title}</h1>
-            <Rating rating={rating}/>
+              {rating && (
+                <Rating rating={rating}/>)}
           </header>
 
           <p class="text-lg font-bold mt-2">{formatPrice(price)} MXN <span class="text-sm font-light">IVA inc.</span>
@@ -74,21 +74,21 @@ const whatsAppMessageToDownload = encodeURIComponent(
                class="bg-secondary-green text-white no-underline text-center py-2 px-6 rounded-lg hover:bg-primary-light inline-block dark:bg-secondary-green"
                target="_blank"
                rel="noopener noreferrer"
-               onclick={() => gtag('event', 'click', {
-                   event_category: 'WhastApp',
+               onclick="gtag('event', 'click', {
+                   event_category: 'WhatsApp',
                    event_label: title,
                    value: price,
-               })}
+               })"
             >Comprar</a>
               {hasDemo && (
                 <a href={`https://wa.me/${WA_NUMBER}?text=${whatsAppMessageToDownload}`}
                    class="text-primary text-center no-underline mt-4 block"
                    target="_blank"
                    rel="noopener noreferrer"
-                   onclick={() => gtag('event', 'click', {
+                   onclick="gtag('event', 'click', {
                        event_category: 'Demo',
                        event_label: title,
-                   })}
+                   })"
                 >Solicitar demo</a>
               )}
           </div>

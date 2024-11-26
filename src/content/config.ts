@@ -7,8 +7,8 @@ const posts = defineCollection({
     seoTitle: z.string().optional().nullable(),
     description: z.string(),
     publishedDate: z.date(),
-    img: z.string().url().optional().nullable(),
-    tags: z.array(z.string()).optional().nullable(),
+    img: z.string().url().optional(),
+    tags: z.array(z.string()).optional(),
     categories: z.array(z.string()).optional().nullable(),
   }),
 });
@@ -18,18 +18,21 @@ const products = defineCollection({
   schema: z.object({
     title: z.string(),
     seoTitle: z.string().optional().nullable(),
-    rating: z.number().min(0).max(5),
+    rating: z.number().min(0).max(5).optional(),
     urlDemo: z.string().url().optional().nullable(),
-    urlToBuy: z.union([
-      z.string().url(),
-      z.array(
-        z.object({
-          title: z.string(),
-          value: z.string(),
-          url: z.string().url(),
-        })
-      ),
-    ]),
+    urlToBuy: z
+      .union([
+        z.string().url(),
+        z.array(
+          z.object({
+            title: z.string(),
+            value: z.string(),
+            url: z.string().url(),
+          })
+        ),
+      ])
+      .optional()
+      .nullable(),
     price: z.object({
       value: z.number(),
       currency: z.string().length(3).default("MXN"),
@@ -43,7 +46,7 @@ const products = defineCollection({
     description: z.string().min(10),
     img: z.string().url(),
     video: z.string().url().optional().nullable(),
-    tags: z.array(z.string()).optional().nullable(),
+    tags: z.array(z.string()).optional(),
     testimonials: z
       .array(
         z.object({
