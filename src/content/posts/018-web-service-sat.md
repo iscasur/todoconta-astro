@@ -119,7 +119,7 @@ De momento no existe una herramienta disponible de forma pública para acceder a
 
 
 
-Entre las aplicaciones que se encuentran disponibles está [XMLSAT Premium](https://todoconta.com/producto/xmlsat-premium/), una aplicación que adicional a la descarga de comprobantes fiscales te permite aprovechar al máximo la información contenida en tus comprobantes fiscales.
+Entre las aplicaciones que se encuentran disponibles está [XMLSAT Premium](/producto/xmlsat-premium/), una aplicación que adicional a la descarga de comprobantes fiscales te permite aprovechar al máximo la información contenida en tus comprobantes fiscales.
 
 
 

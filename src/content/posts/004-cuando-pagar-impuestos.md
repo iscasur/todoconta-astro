@@ -116,7 +116,7 @@ Estos impuestos no son los únicos. Existen situaciones que el impuesto se paga 
 
 * La enajenación de bienes inmuebles.
 
-* [La obtención de ingresos por adquisición de bienes](https://blog.todoconta.com/ingresos-por-adquisicion-de-bienes/),
+* [La obtención de ingresos por adquisición de bienes](/.com/ingresos-por-adquisicion-de-bienes/),
 
 * La obtención de ingresos por honorarios de forma esporádica, etc.
 

@@ -15,7 +15,7 @@ Una de las obligaciones que no debemos ignorar, es lo relacionado con el plazo p
 
 
 
-De esta obligación sólo nos liberamos en ciertos casos en los que estemos imposibilitados para conservarla o se haya [perdido por causas de fuerza mayor](https://todoconta.com/perdida-contabilidad-siniestros/).
+De esta obligación sólo nos liberamos en ciertos casos en los que estemos imposibilitados para conservarla o se haya [perdido por causas de fuerza mayor](/perdida-contabilidad-siniestros/).
 
 
 
@@ -41,7 +41,7 @@ Muchas veces esas *facilidades para ciertos sectores de no llevar contabilidad*
 
 
 
-El plazo para conservar la contabilidad y la documentación dependerá de **actos cuyos efectos fiscales se prolonguen con el tiempo** ([depreciación o amortización de activos](https://todoconta.com/depreciacion-activos-fijos/)). Es decir, en aquellas declaraciones donde se apliquen estos conceptos el plazo comienza a partir de la fecha en la hayan sido presentadas.
+El plazo para conservar la contabilidad y la documentación dependerá de **actos cuyos efectos fiscales se prolonguen con el tiempo** ([depreciación o amortización de activos](/depreciacion-activos-fijos/)). Es decir, en aquellas declaraciones donde se apliquen estos conceptos el plazo comienza a partir de la fecha en la hayan sido presentadas.
 
 
 

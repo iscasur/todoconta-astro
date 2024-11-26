@@ -2,7 +2,9 @@
 import Subscribe from "../Subscribe.astro";
 import { LIST_ID_SENDY } from "astro:env/client";
 
+const { title } = Astro.props
 ---
-<section class="text-center py-6 mt-6 rounded-lg">
-  <Subscribe title="¡Suscríbete y recibe una Plantilla Gratuita!" listId={LIST_ID_SENDY} />
+<section class="text-center text-white py-6 mt-6 rounded-lg bg-primary-light">
+  <h4 class="text-lg font-bold">{title}</h4>
+  <Subscribe listId={LIST_ID_SENDY} />
 </section>

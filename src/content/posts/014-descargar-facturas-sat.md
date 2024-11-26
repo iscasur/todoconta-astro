@@ -46,7 +46,7 @@ Para acceder a la aplicación debemos ingresar nuestras credenciales de identifi
 
 
 
-Recuerda que si requieres ingresar con tu Firma Electrónica deberás contar con la consola **[Java instalada y configurada](https://todoconta.com/configurar-java/)** correctamente.
+Recuerda que si requieres ingresar con tu Firma Electrónica deberás contar con la consola **[Java instalada y configurada](/configurar-java/)** correctamente.
 
 
 

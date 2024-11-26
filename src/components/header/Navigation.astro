@@ -1,7 +1,13 @@
 ---
 import {WA_NUMBER} from "astro:env/client";
 
-const menuList = [
+interface MenuListProps {
+    title: string,
+    url: string,
+    isCTA?: boolean,
+}
+
+const menuList: MenuListProps[] = [
     {
         title: 'Blog',
         url: '/blog'
@@ -10,18 +16,11 @@ const menuList = [
         title: 'Tienda',
         url: '/tienda'
     },
-    // {
-    //     title: 'Newsletter',
-    //     url: '/newsletter'
-    // },
-    // {
-    //     title: 'Podcast',
-    //     url: '/podcast'
-    // },
-    // {
-    //     title: 'Contacto',
-    //     url: '/contacto'
-    // },
+    {
+        title: 'Agenda tu Asesoría',
+        url: `https://wa.me/${WA_NUMBER}/?text=¡Hola Israel! Me interesa en una sesión 1 a 1 contigo.`,
+        isCTA: true,
+    }
 ]
 
 const {styles} = Astro.props
@@ -29,10 +28,7 @@ const {styles} = Astro.props
 <div class=`nav-links ${styles}`>
     {
         menuList.map((item) => (
-          <a href={item.url}>{item.title}</a>
+          <a href={item.url} class={item.isCTA ? "text-center text-white bg-secondary-green font-semibold py-2 px-4 md:py-2 md:rounded-lg border border-solid border-secondary-green hover:bg-transparent hover:text-secondary-green" : ""}>{item.title}</a>
         ))
     }
-  <a href=`https://wa.me/${WA_NUMBER}/?text=¡Hola Israel! Me interesa en una sesión 1 a 1 contigo.`
-     class="text-center text-white bg-secondary-green font-semibold py-2 px-4 md:py-2 md:rounded-lg border border-solid border-secondary-green hover:bg-transparent hover:text-secondary-green">Agenda
-    tu Asesoría</a>
 </div>

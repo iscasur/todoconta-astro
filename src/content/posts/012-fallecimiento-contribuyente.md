@@ -156,7 +156,7 @@ El aviso de cancelación lo puede presentar cualquier familiar de la persona que
 
 
 
-Dentro del Anexo 1 de la [Resolución Miscelánea Fiscal](https://todoconta.com/resolucion-miscelanea-fiscal-importancia/) se nos detallan los requisitos que se deberán cumplir en cada caso.
+Dentro del Anexo 1 de la [Resolución Miscelánea Fiscal](/resolucion-miscelanea-fiscal-importancia/) se nos detallan los requisitos que se deberán cumplir en cada caso.
 
 
 
@@ -381,7 +381,7 @@ Y que además nuestra legislación mexicana en materia de impuestos aplica la su
 
 
 
-De esta situación, se debe advertir a los herederos que además de recibir un incremento en su patrimonio ([exento de impuestos](https://todoconta.com/ingresos-gravados-exentos-isr/)) son susceptibles de responder a las cargas que la herencia conlleve por si misma **incluidos los créditos fiscales pendientes**.
+De esta situación, se debe advertir a los herederos que además de recibir un incremento en su patrimonio ([exento de impuestos](/ingresos-gravados-exentos-isr/)) son susceptibles de responder a las cargas que la herencia conlleve por si misma **incluidos los créditos fiscales pendientes**.
 
 
 
