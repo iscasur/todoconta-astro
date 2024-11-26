@@ -1,0 +1,48 @@
+---
+import Layout from "../layouts/Layout.astro";
+import {WA_NUMBER} from "astro:env/client";
+
+const pageTitle = 'Ups, algo salió mal - Todoconta'
+---
+<Layout title={pageTitle}>
+  <div class="container mx-auto md:max-w-3xl p-4 pb-16 md:pb-32">
+    <section class="404-page text-center py-12 px-6 prose dark:prose-invert prose-lg">
+      <h1 class="text-4xl font-bold mb-4">Página no encontrada 😳</h1>
+      <p class="mb-6">
+        Lo sentimos, no pudimos encontrar la página que estabas buscando. Es posible que el enlace esté roto o la página
+        ya no exista.
+      </p>
+
+      <div class="mb-8">
+        <p class="mb-4">Aquí tienes algunas opciones:</p>
+        <ul class="list-none flex justify-center gap-4">
+          <li><a href="/" class="text-blue-500 no-underline">Ir al inicio</a></li>
+          <li><a href="/blog" class="text-blue-500 no-underline">Leer artículos del blog</a></li>
+          <li><a href="/tienda" class="text-blue-500 no-underline">Explorar nuestros productos</a></li>
+        </ul>
+      </div>
+
+      <div class="mb-8">
+        <p class="mb-4">O bien, puedes <a href={`https://wa.me/${WA_NUMBER}`}
+                                          class="text-primary"
+                                          target="_blank"
+                                          rel="noopener noreferrer"
+        >escribirnos por WhatsApp</a></p>
+      </div>
+    </section>
+  </div>
+</Layout>
+
+<script>
+    if (typeof gtag === 'function') {
+        gtag('event', 'page_view', {
+            page_title: '404 - Página no encontrada',
+            page_location: window.location.href,
+            page_path: window.location.pathname,
+            event_category: 'Error',
+            event_label: 'Página 404',
+        });
+    } else {
+        console.error('Google Analytics no está disponible.');
+    }
+</script>
