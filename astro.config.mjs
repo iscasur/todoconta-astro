@@ -3,14 +3,18 @@ import {defineConfig, envField} from 'astro/config';
 import tailwind from '@astrojs/tailwind';
 import partytown from '@astrojs/partytown';
 
+import vercel from '@astrojs/vercel/serverless';
+
 // https://astro.build/config
 export default defineConfig({
   site: "https://todoconta.com",
+
   integrations: [tailwind(), partytown({
     config: {
       forward: ["dataLayer.push"],
     }
   })],
+
   redirects: {
     '/xmlsatpremium': '/producto/xmlsat-premium/',
     '/xmlsat': '/producto/xmlsat/',
@@ -32,6 +36,7 @@ export default defineConfig({
     '/xmlsat-demo': 'http://softwarepaq2.com/downloads/software/SetupXMLSAT.exe',
     '/alegra': 'https://app.alegra.com/user/register/country/mexico?coupon=CNTODOCONTA'
   },
+
   experimental: {
     env: {
       schema: {
@@ -41,5 +46,8 @@ export default defineConfig({
         WA_NUMBER: envField.string({context: "client", access: "public"}),
       }
     }
-  }
+  },
+
+  output: 'server',
+  adapter: vercel()
 });
