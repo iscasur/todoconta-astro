@@ -2,6 +2,7 @@
 import {defineConfig, envField} from 'astro/config';
 import tailwind from '@astrojs/tailwind';
 import partytown from '@astrojs/partytown';
+import {loadEnv} from "vite";
 
 // https://astro.build/config
 export default defineConfig({
@@ -35,10 +36,10 @@ export default defineConfig({
   experimental: {
     env: {
       schema: {
-        API_URL_SENDY: envField.string({context: "client", access: "public", default: "https://sendy.todoconta.com"}),
-        API_KEY_SENDY: envField.string({context: "client", access: "public", default: "5a7Ijeup4Dmx0S3QghQ3"}),
-        LIST_ID_SENDY: envField.string({context: "client", access: "public", default: "k10AD2h1Bu4fTfy763prrdpA"}),
-        WA_NUMBER: envField.string({context: "client", access: "public", default: "5215544753602"})
+        SENDY_API_URL: envField.string({context: "server", access: "secret"}),
+        SENDY_API_KEY: envField.string({context: "server", access: "secret"}),
+        SENDY_LIST_ID: envField.string({context: "server", access: "secret"}),
+        WA_NUMBER: envField.string({context: "client", access: "public"}),
       }
     }
   }

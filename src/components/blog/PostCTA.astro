@@ -1,6 +1,6 @@
 ---
 import Subscribe from "../Subscribe.astro";
-import {LIST_ID_SENDY} from "astro:env/client";
+import {SENDY_LIST_ID} from "astro:env/server";
 
 interface Props {
     title: string;
@@ -25,6 +25,6 @@ const {title, description, ctaText, ctaLink, showSubscription = false} = Astro.p
       <Subscribe title="Te interesa el contenido"
                  description="Suscríbete a nuestro newsletter para recibir más consejos y recursos exclusivos."
                  disclaimer="Puedes darte de baja cuando gustes, sin resentimientos"
-                 listId={LIST_ID_SENDY}/>
+                 listId={SENDY_LIST_ID}/>
     )}
 </div>

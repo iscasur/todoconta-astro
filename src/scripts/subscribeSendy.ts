@@ -1,4 +1,4 @@
-import { API_URL_SENDY, API_KEY_SENDY } from "astro:env/client";
+import { SENDY_API_URL, SENDY_API_KEY } from "astro:env/server";
 
 const form = document.getElementById("subscribeForm") as HTMLFormElement;
 const messageContainer = document.getElementById("message") as HTMLElement;
@@ -9,14 +9,14 @@ form.addEventListener("submit", async (e) => {
   e.preventDefault();
   const formData = new FormData(form);
   const data = {
-    api_key: API_KEY_SENDY,
+    api_key: SENDY_API_KEY,
     list: listId,
     email: formData.get("email")?.toString() || "",
     boolean: "true",
   };
 
   try {
-    const response = await fetch(`${API_URL_SENDY}/subscribe`, {
+    const response = await fetch(`${SENDY_API_URL}/subscribe`, {
       method: "POST",
       headers: {
         "Content-Type": "application/x-www-form-urlencoded",
