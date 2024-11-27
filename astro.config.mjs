@@ -35,10 +35,10 @@ export default defineConfig({
   experimental: {
     env: {
       schema: {
-        API_URL_SENDY: envField.string({context: "client", access: "public", default: "https://sendy.todoconta.com"}),
-        API_KEY_SENDY: envField.string({context: "client", access: "public", default: "5a7Ijeup4Dmx0S3QghQ3"}),
-        LIST_ID_SENDY: envField.string({context: "client", access: "public", default: "k10AD2h1Bu4fTfy763prrdpA"}),
-        WA_NUMBER: envField.string({context: "client", access: "public", default: "5215544753602"})
+        SENDY_API_URL: envField.string({context: "client", access: "public"}),
+        SENDY_API_KEY: envField.string({context: "client", access: "public"}),
+        SENDY_LIST_ID: envField.string({context: "client", access: "public"}),
+        WA_NUMBER: envField.string({context: "client", access: "public"})
       }
     }
   }

@@ -1,4 +1,4 @@
-import { API_URL_SENDY, API_KEY_SENDY } from "astro:env/client";
+import { SENDY_API_URL, SENDY_API_KEY } from "astro:env/client";
 
 let cachedSubscriberCount: string | null = null;
 let cacheTimestamp: number | null = null;
@@ -16,7 +16,7 @@ export const fetchActiveSubscriberCount = async (
     return cachedSubscriberCount;
   }
 
-  const url = `${API_URL_SENDY}/api/subscribers/active-subscriber-count.php`;
+  const url = `${SENDY_API_URL}/api/subscribers/active-subscriber-count.php`;
 
   const response = await fetch(url, {
     method: "POST",
@@ -24,7 +24,7 @@ export const fetchActiveSubscriberCount = async (
       "Content-Type": "application/x-www-form-urlencoded",
     },
     body: new URLSearchParams({
-      api_key: API_KEY_SENDY,
+      api_key: SENDY_API_KEY,
       list_id: listIdSendy,
     }),
   });
