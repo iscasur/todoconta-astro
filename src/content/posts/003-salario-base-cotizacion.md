@@ -6,7 +6,7 @@ description: El Salario Base de Cotización (SBC), es el promedio anual de lo qu
 publishedDate: 2011-08-11
 tags: ["SBC"]
 categories: ["Seguridad social"]
-img: https://todoconta.com/wp-content/uploads/2023/01/dinero-mexicano-billetes.jpeg
+img: https://s3.us-east-1.amazonaws.com/todoconta.com/uploads/dinero-mexicano-billetes.jpeg
 ---
 
 

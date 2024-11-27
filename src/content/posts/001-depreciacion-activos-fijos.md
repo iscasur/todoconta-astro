@@ -3,7 +3,7 @@ title: Depreciación de Activos Fijos
 slug: depreciacion-activos-fijos
 description: Las activos fijos (excepto los terrenos) sufren de un efecto económico denominado depreciación, que no es mas que la disminución de su valor.
 publishedDate: 2011-03-02
-img: https://todoconta.com/wp-content/uploads/2023/01/truck-activos-fijos-assets.jpeg
+img: https://s3.us-east-1.amazonaws.com/todoconta.com/uploads/truck-activos-fijos-assets.jpeg
 ---
 La depreciación de activos fijos, es un efecto económico que sufren nuestros bienes (exceptuando los terrenos) en disminución de su valor con el paso del tiempo.
 

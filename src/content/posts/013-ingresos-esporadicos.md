@@ -6,7 +6,7 @@ description: Las personas con ingresos esporádicos por servicios profesionales,
 publishedDate: 2017-09-17
 tags: [ "Personas Físicas", "Servicios" ]
 categories: [ "Declaraciones y pagos" ]
-img: https://todoconta.com/wp-content/uploads/2023/01/declaracion-impuestos-servicios-profesionales.jpeg
+img: https://s3.us-east-1.amazonaws.com/todoconta.com/uploads/declaracion-impuestos-servicios-profesionales.jpeg
 ---
 
 

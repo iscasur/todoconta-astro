@@ -6,7 +6,7 @@ description: Los estados financieros son el resultado del proceso contable y sir
 publishedDate: 2012-05-01
 tags: []
 categories: ["Contabilidad"]
-img: https://todoconta.com/wp-content/uploads/2023/01/firmar-documento-estados-financieros-legal.jpeg
+img: https://s3.us-east-1.amazonaws.com/todoconta.com/uploads/firmar-documento-estados-financieros-legal.jpeg
 ---
 
 

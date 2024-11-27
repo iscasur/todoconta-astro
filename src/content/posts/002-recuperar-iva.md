@@ -6,7 +6,7 @@ description: Ante la existencia de saldo a favor de IVA, la ley contempla 3 posi
 publishedDate: 2011-06-08
 tags: ["IVA", "Saldo a favor", "Devolución", "Compensación", "Servicios"]
 categories: ["Declaraciones y pagos"]
-img: https://todoconta.com/wp-content/uploads/2023/01/retro-calculator-desk-yellow.jpeg
+img: https://s3.us-east-1.amazonaws.com/todoconta.com/uploads/retro-calculator-desk-yellow.jpeg
 ---
 
 

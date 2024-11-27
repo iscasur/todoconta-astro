@@ -6,7 +6,7 @@ description: Descubre cómo puedes descargar facturas completamente gratis, dire
 publishedDate: 2018-08-09
 tags: ["SAT"]
 categories: ["Comprobantes fiscales"]
-img: https://todoconta.com/wp-content/uploads/2023/02/facturas-sat-descargar-xml-computadora.jpeg
+img: https://s3.us-east-1.amazonaws.com/todoconta.com/uploads/facturas-sat-descargar-xml-computadora.jpeg
 ---
 
 

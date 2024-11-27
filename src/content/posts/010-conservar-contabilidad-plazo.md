@@ -6,7 +6,7 @@ description: La normatividad mexicana en temas contables nos establece el plazo 
 publishedDate: 2014-05-09
 tags: ["CFF", "Registros contables"]
 categories: ["Contabilidad"]
-img: https://todoconta.com/wp-content/uploads/2023/01/time-plazos-tiempo.jpeg
+img: https://s3.us-east-1.amazonaws.com/todoconta.com/uploads/time-plazos-tiempo.jpeg
 ---
 
 
