@@ -35,9 +35,9 @@ export default defineConfig({
   experimental: {
     env: {
       schema: {
-        API_URL_SENDY: envField.string({context: "client", access: "public"}),
-        API_KEY_SENDY: envField.string({context: "client", access: "public"}),
-        LIST_ID_SENDY: envField.string({context: "client", access: "public"}),
+        SENDY_API_URL: envField.string({context: "client", access: "public"}),
+        SENDY_API_KEY: envField.string({context: "client", access: "public"}),
+        SENDY_LIST_ID: envField.string({context: "client", access: "public"}),
         WA_NUMBER: envField.string({context: "client", access: "public"})
       }
     }
