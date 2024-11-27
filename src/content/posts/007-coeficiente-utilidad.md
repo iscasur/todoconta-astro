@@ -6,7 +6,7 @@ description: El coeficiente de utilidad es el factor que muestra el porcentaje d
 publishedDate: 2013-03-23
 tags: ["Cálculos", "ISR"]
 categories: ["Declaraciones y pagos"]
-img: https://todoconta.com/wp-content/uploads/2023/01/math-calculos-factores-matematicas-formulas.jpeg
+img: https://s3.us-east-1.amazonaws.com/todoconta.com/uploads/math-calculos-factores-matematicas-formulas.jpeg
 ---
 
 

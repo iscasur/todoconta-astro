@@ -6,7 +6,7 @@ description: Para efectos del cálculo del ISR, existen ingresos que gravados (l
 publishedDate: 2012-11-23
 tags: ["ISR", "Ingresos", "Personas Físicas", "Impuestos 101"]
 categories: ["Declaraciones y pagos"]
-img: https://todoconta.com/wp-content/uploads/2023/01/impuestos-comprobantes-fiscales-deducciones-calculadora.jpeg
+img: https://s3.us-east-1.amazonaws.com/todoconta.com/uploads/impuestos-comprobantes-fiscales-deducciones-calculadora.jpeg
 ---
 
 

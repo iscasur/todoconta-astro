@@ -6,7 +6,7 @@ description: Tener en cuenta la Resolución Miscelánea Fiscal nos permite reduc
 publishedDate: 2019-04-25
 tags: ["RMF"]
 categories: ["Impuestos"]
-img: https://todoconta.com/wp-content/uploads/2023/02/documento-legal-texto-libro-book-coffee-pen.jpeg
+img: https://s3.us-east-1.amazonaws.com/todoconta.com/uploads/documento-legal-texto-libro-book-coffee-pen.jpeg
 ---
 
 

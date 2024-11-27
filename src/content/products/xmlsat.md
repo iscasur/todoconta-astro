@@ -9,7 +9,7 @@ urlToBuy:
   - title: "1 Licencia XMLSAT"
     value: "1XMLSAT"
     url: "https://buy.stripe.com/eVa3d09CRf5Kgfe5kq"
-img: https://todoconta.com/wp-content/uploads/2023/01/xmlsat.png
+img: https://s3.us-east-1.amazonaws.com/todoconta.com/uploads/store/xmlsat.png
 vide: 
 description: Optimiza la administración masiva de tus comprobantes fiscales (CFDI) y agiliza tu auditoría electrónica con un software poderoso y fácil de usar, compatible con las versiones 3.2, 3.3 y 4.0 del SAT.
 categories: ["Construsoft"]

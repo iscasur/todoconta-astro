@@ -6,7 +6,7 @@ description: La firma electrónica es un conjunto de datos biométricos, para le
 publishedDate: 2019-07-14
 tags: [ "Firma electrónica", "Servicios" ]
 categories: [ "Impuestos" ]
-img: https://todoconta.com/wp-content/uploads/2023/01/electronic-code-firma-electronica.jpeg
+img: https://s3.us-east-1.amazonaws.com/todoconta.com/uploads/electronic-code-firma-electronica.jpeg
 ---
 
 

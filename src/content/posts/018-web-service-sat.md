@@ -6,7 +6,7 @@ description: El SAT liberó el servicio denominado Web Service, una nueva forma 
 publishedDate: 2019-10-24
 tags: ["Firma electrónica", "XML"]
 categories: ["Comprobantes fiscales"]
-img: https://todoconta.com/wp-content/uploads/2019/10/code-vsc-digital-electronic-web-coding.jpg
+img: https://s3.us-east-1.amazonaws.com/todoconta.com/uploads/code-vsc-digital-electronic-web-coding.jpg
 ---
 
 
