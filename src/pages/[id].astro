@@ -3,7 +3,8 @@ import Layout from "../layouts/Layout.astro";
 import {getCollection, render} from 'astro:content'
 import PostCTA from "../components/blog/PostCTA.astro";
 import AuthorBio from "../components/blog/AuthorBio.astro";
-import {WA_NUMBER} from "astro:env/client";
+import {WA_NUMBER, SENDY_LIST_ID} from "astro:env/client";
+import SubscribeWidget from "../components/SubscribeWidget.astro";
 
 interface MetaTagsProps {
     description?: string;
@@ -57,6 +58,16 @@ const metaTags: MetaTagsProps = {
             </figcaption>
           </figure>
         )}
+      <section>
+        <SubscribeWidget listId={SENDY_LIST_ID}
+                         ctaText="¡Suscribirme!"
+                         title="Consigue nuestra plantilla gratuita"
+                         description="Recibe la plantilla de flujo de efectivo y nuestro boletín semanal."
+                         disclaimer="Te puedes dar de baja cuando quieras. Sin resentimientos. 😊"
+                         hasNameField
+                         style={"p-8 rounded-lg bg-gray-100 text-center"}
+        />
+      </section>
       <div class="prose dark:prose-invert prose-lg">
         <Content/>
       </div>
@@ -65,7 +76,6 @@ const metaTags: MetaTagsProps = {
                  description="Si necesitas ayuda o quieres que implemente este servicio por ti, no dudes en ponerte en contacto conmigo."
                  ctaText="Contáctame Ahora"
                  ctaLink=`https://wa.me/${WA_NUMBER}/?text=¡Hola Israel! Acabo de leer "${title}" ¿Agendamos una sesión 1:1?`
-                 showSubscription={true}
         />
       </section>
       <section>
