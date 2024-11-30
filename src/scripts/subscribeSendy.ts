@@ -11,6 +11,7 @@ form.addEventListener("submit", async (e) => {
   const data = {
     api_key: SENDY_API_KEY,
     list: listId,
+    name: formData.get("name")?.toString() || "",
     email: formData.get("email")?.toString() || "",
     boolean: "true",
   };
