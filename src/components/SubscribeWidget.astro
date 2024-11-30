@@ -11,7 +11,7 @@ interface Props {
     style?: string,
 }
 
-const {title, description, disclaimer, listId, ctaText, hasNameField, style} = Astro.props;
+const {title, description, disclaimer = "Te puedes dar de baja cuando quieras. Sin resentimientos. 😊", listId, ctaText, hasNameField, style} = Astro.props;
 ---
 <div class={`prose max-w-none prose-lg ${style}`}>
     {title && (
