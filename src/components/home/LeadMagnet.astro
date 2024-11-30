@@ -1,10 +1,12 @@
 ---
-import Subscribe from "../Subscribe.astro";
-import { SENDY_LIST_ID } from "astro:env/client";
-
-const { title } = Astro.props
+import {SENDY_LIST_ID} from "astro:env/client";
+import SubscribeWidget from "../SubscribeWidget.astro";
 ---
-<section class="text-center text-white py-6 mt-6 rounded-lg bg-primary-light">
-  <h4 class="text-lg font-bold">{title}</h4>
-  <Subscribe listId={SENDY_LIST_ID} />
+<section class="p-6 mt-6 rounded-lg bg-primary-light">
+  <SubscribeWidget listId={SENDY_LIST_ID}
+                   ctaText="Descargar ahora"
+                   title="Suscríbete y recibe una plantilla gratuita"
+                   description="Gestiona tus ingresos y gastos con nuestra plantilla gratuita y recibe nuestro boletín semanal."
+                   style={"text-center text-white prose-invert"}
+                   hasNameField/>
 </section>

@@ -1,0 +1,36 @@
+---
+interface Props {
+    listId: string,
+    ctaText: string,
+    hasNameField?: boolean,
+}
+
+const {
+    listId,
+    ctaText,
+    hasNameField = false,
+} = Astro.props;
+---
+<form id="subscribeForm" data-list-id={listId} class="mt-4 flex flex-col space-y-4">
+  <div class=`flex flex-col md:grid md:grid-cols-${hasNameField ? "3" : "2"} gap-2`>
+    {hasNameField && (
+      <label for="name">
+        <span class="hidden">Nombre</span>
+        <input type="text" id="name" name="name" placeholder="Nombre"
+               class="w-full px-4 py-2 rounded-lg border focus:outline-none focus:ring-2 focus:ring-primary"/>
+      </label>
+    )}
+    <label for="email">
+      <span class="hidden">Email</span>
+      <input type="email" id="email" name="email" placeholder="Correo electrónico" required
+             class="w-full px-4 py-2 rounded-lg border focus:outline-none focus:ring-2 focus:ring-primary"/>
+    </label>
+    <input type="submit" value={ctaText}
+           class="bg-primary text-white py-2 px-2 md:py-0 rounded-lg hover:bg-primary-light dark:bg-secondary-green"/>
+  </div>
+    <span id="message"></span>
+</form>
+
+<script>
+    import '../scripts/subscribeSendy.ts'
+</script>

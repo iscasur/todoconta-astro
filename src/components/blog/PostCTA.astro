@@ -1,16 +1,12 @@
 ---
-import Subscribe from "../Subscribe.astro";
-import {SENDY_LIST_ID} from "astro:env/client";
-
 interface Props {
     title: string;
     description: string;
     ctaText: string;
     ctaLink: string;
-    showSubscription?: boolean;
 }
 
-const {title, description, ctaText, ctaLink, showSubscription = false} = Astro.props
+const {title, description, ctaText, ctaLink} = Astro.props
 ---
 <div class="bg-gray-100 text-center p-6 rounded-lg mt-8">
   <h3 class="text-xl font-bold">{title}</h3>
@@ -19,12 +15,4 @@ const {title, description, ctaText, ctaLink, showSubscription = false} = Astro.p
      class="mt-4 inline-block bg-primary dark:bg-secondary-green text-white py-2 px-4 rounded-lg hover:bg-primary-light">
       {ctaText}
   </a>
-
-    {showSubscription && (
-      <div class="mt-6 border-t pt-6"></div>
-      <Subscribe title="Te interesa el contenido"
-                 description="Suscríbete a nuestro newsletter para recibir más consejos y recursos exclusivos."
-                 disclaimer="Puedes darte de baja cuando gustes, sin resentimientos"
-                 listId={SENDY_LIST_ID}/>
-    )}
 </div>

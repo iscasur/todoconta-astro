@@ -1,0 +1,27 @@
+---
+import SubscribeForm from "./SubscribeForm.astro";
+
+interface Props {
+    listId: string,
+    ctaText: string,
+    title?: string,
+    description?: string,
+    disclaimer?: string,
+    hasNameField?: boolean,
+    style?: string,
+}
+
+const {title, description, disclaimer = "Te puedes dar de baja cuando quieras. Sin resentimientos. 😊", listId, ctaText, hasNameField, style} = Astro.props;
+---
+<div class={`prose max-w-none prose-lg ${style}`}>
+    {title && (
+      <h4 class="font-bold">{title}</h4>
+    )}
+    {description && (
+      <p>{description}</p>
+    )}
+  <SubscribeForm listId={listId} ctaText={ctaText} hasNameField={hasNameField}/>
+    {disclaimer && (
+      <p class="text-xs">{disclaimer}</p>
+    )}
+</div>
