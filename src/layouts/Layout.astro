@@ -4,66 +4,73 @@ import Footer from "../components/footer/Footer.astro";
 import '../styles/global.css';
 
 interface MetaTagsProps {
-	description?: string;
-	keywords?: string[];
-	image?: string;
-	type?: 'article' | 'product' | 'website';
+    description?: string;
+    keywords?: string[];
+    image?: string;
+    type?: 'article' | 'product' | 'website';
 }
 interface Props {
-	title: string;
-	isLandingPage?: boolean;
-	metaTags?: MetaTagsProps;
+    title: string;
+    isLandingPage?: boolean;
+    metaTags?: MetaTagsProps;
 }
 
-const { title, isLandingPage = false, metaTags } = Astro.props;
+const {title, isLandingPage = false, metaTags} = Astro.props;
 const url = new URL(Astro.url.pathname, Astro.site);
 ---
 
 <!doctype html>
 <html lang="es" class="scroll-smooth">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="generator" content={Astro.generator} />
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="generator" content={Astro.generator}/>
 
-		<!--Meta Tags SEO-->
-		<meta name="description" content={metaTags?.description || ''} />
-		<meta name="keywords" content={Array.isArray(metaTags?.keywords) ? metaTags?.keywords.join(', ') : metaTags?.keywords || ''} />
-		<meta name="author" content="TodoConta">
+  <!--Meta Tags SEO-->
+  <meta name="description" content={metaTags?.description || ''}/>
+  <meta name="keywords"
+        content={Array.isArray(metaTags?.keywords) ? metaTags?.keywords.join(', ') : metaTags?.keywords || ''}/>
+  <meta name="author" content="TodoConta">
 
-		<!--Open Graph-->
-		<meta property="og:title" content={title} />
-		<meta property="og:description" content={metaTags?.description || ''} />
-		<meta property="og:image" content={metaTags?.image || ''} />
-		<meta property="og:url" content={url} />
-		<meta property="og:type" content={metaTags?.type || ''} />
+  <!--Open Graph-->
+  <meta property="og:title" content={title}/>
+  <meta property="og:description" content={metaTags?.description || ''}/>
+  <meta property="og:image" content={metaTags?.image || ''}/>
+  <meta property="og:url" content={url}/>
+  <meta property="og:type" content={metaTags?.type || ''}/>
 
-		<!--Twitter Cards-->
-		<meta name="twitter:card" content="summary_large_image" />
-		<meta name="twitter:title" content={title} />
-		<meta name="twitter:description" content={metaTags?.description || ''} />
-		<meta name="twitter:image" content={metaTags?.image || ''} />
+  <!--Twitter Cards-->
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:title" content={title}/>
+  <meta name="twitter:description" content={metaTags?.description || ''}/>
+  <meta name="twitter:image" content={metaTags?.image || ''}/>
 
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<!-- Google tag (gtag.js) -->
-		<script is:inline type="text/partytown" async src="https://www.googletagmanager.com/gtag/js?id=G-VS5CTEJ19C"></script>
-		<script is:inline type="text/partytown">
-		  window.dataLayer = window.dataLayer || [];
-		  function gtag(){dataLayer.push(arguments);}
-		  gtag('js', new Date());
+  <meta name="viewport" content="width=device-width"/>
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg"/>
+  <!-- Google tag (gtag.js) -->
+  <script is:inline type="text/partytown" async src="https://www.googletagmanager.com/gtag/js?id=G-VS5CTEJ19C"></script>
+  <script is:inline type="text/partytown">
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-		  gtag('config', 'G-VS5CTEJ19C');
-		</script>
-		<title>{title}</title>
-	</head>
-	<body class="bg-[#F8F9FA] dark:bg-primary">
-	{!isLandingPage && <Header />}
-		<main>
-		  <slot />
-		</main>
-	{!isLandingPage && <Footer />}
-		<script>
-			import '../scripts/menu.js'
-		</script>
-	</body>
+      gtag('config', 'G-VS5CTEJ19C');
+  </script>
+  <!--ShareThis-->
+  <script is:inline type="text/partytown"
+          src="https://platform-api.sharethis.com/js/sharethis.js#property=674d269e276ece0012ce7dfd&product=inline-share-buttons&source=platform"
+          async="async"></script>
+  <title>{title}</title>
+</head>
+<body class="bg-[#F8F9FA] dark:bg-primary">
+{!isLandingPage &&
+  <Header/>}
+<main>
+  <slot/>
+</main>
+{!isLandingPage &&
+  <Footer/>}
+<script>
+    import '../scripts/menu.js'
+</script>
+</body>
 </html>
