@@ -1,0 +1,21 @@
+---
+import Layout from "../layouts/Layout.astro";
+import SubscribeWidget from "../components/SubscribeWidget.astro";
+import {SENDY_LIST_ID} from "astro:env/client";
+---
+<Layout title="Suscribete">
+  <div class="container mx-auto md:max-w-3xl p-4 pb-16 md:pb-32 prose flex justify-center">
+    <section class="message text-center">
+      <SubscribeWidget listId={SENDY_LIST_ID}
+                       ctaText="¡Quiero la plantilla!"
+                       title="Organiza tus finanzas con nuestra plantilla gratuita"
+                       description="Lleva el control financiero con nuestra plantilla gratuita y recibe contenido exclusivo cada semana."
+                       hasNameField
+      />
+    </section>
+  </div>
+</Layout>
+
+<script>
+    import '../scripts/suscribete.ts'
+</script>
