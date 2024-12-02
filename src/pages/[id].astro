@@ -5,6 +5,7 @@ import PostCTA from "../components/blog/PostCTA.astro";
 import AuthorBio from "../components/blog/AuthorBio.astro";
 import {WA_NUMBER, SENDY_LIST_ID} from "astro:env/client";
 import SubscribeWidget from "../components/SubscribeWidget.astro";
+import ShareThis from "../components/ShareThis.astro";
 
 interface MetaTagsProps {
     description?: string;
@@ -70,6 +71,9 @@ const metaTags: MetaTagsProps = {
       <div class="prose dark:prose-invert prose-lg">
         <Content/>
       </div>
+      <section>
+        <ShareThis />
+      </section>
       <section>
         <PostCTA title="¿Dudas sobre este tema?"
                  description="Si necesitas ayuda o quieres que implemente este servicio por ti, no dudes en ponerte en contacto conmigo."
