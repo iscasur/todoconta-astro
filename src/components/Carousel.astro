@@ -1,6 +1,4 @@
 ---
-import { Image } from "astro:assets";
-
 interface SnapItem {
     title: string,
     description: string,
@@ -19,7 +17,7 @@ const {data} = Astro.props
 <div class="scroll-container snap-x snap-mandatory md:snap-none overflow-x-auto flex md:grid md:grid-cols-3 gap-6 pb-4">
     {data.map((item) => (
       <div class=`snap-center bg-white shadow-md rounded-lg p-6 min-w-[85%] max-w-sm ${item.customClass || ''}`>
-          {item.image && <Image src={item.image} alt={item.title} class="w-full h-40 object-cover rounded-t-lg mb-4" quality="low"/>}
+          {item.image && <img src={item.image} alt={item.title} class="w-full h-40 object-cover rounded-t-lg mb-4" />}
           {item.badge &&
             <span class="bg-green-500 text-white text-sm font-semibold px-2 py-1 rounded">{item.badge}</span>}
         <h3 class="text-xl font-semibold mb-2">{item.title}</h3>

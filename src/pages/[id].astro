@@ -20,7 +20,7 @@ export async function getStaticPaths() {
 
     return posts.map(post => ({
         params: {
-            id: post.slug
+            id: post.id
         },
         props: {
             post

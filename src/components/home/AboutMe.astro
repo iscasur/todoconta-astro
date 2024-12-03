@@ -1,4 +1,6 @@
 ---
+import { Image } from "astro:assets";
+import profileImage from '../../assets/images/profile.jpg'
 import { WA_NUMBER } from 'astro:env/client'
 
 ---
@@ -6,7 +8,7 @@ import { WA_NUMBER } from 'astro:env/client'
   <div class="container min-w-[280px] max-w-sm md:max-w-xl mx-auto py-4 prose dark:prose-invert">
     <h2 class="text-center text-2xl font-bold mb-6">Acerca de mi</h2>
     <div>
-      <Image src="/src/assets/images/profile.jpg" alt="Israel Castro Urieta" class="w-32 h-32 rounded-full mx-auto">
+      <Image src={profileImage} alt="Israel Castro Urieta" width={120} height={120} class="w-32 h-32 rounded-full mx-auto" />
       <p>Hola! Soy Israel Castro Urieta, contador público con más de 10 años de experiencia ayudando a personas físicas
         y
         negocios a simplificar su contabilidad.</p>

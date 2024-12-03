@@ -32,15 +32,12 @@ export default defineConfig({
     '/xmlsat-demo': 'http://softwarepaq2.com/downloads/software/SetupXMLSAT.exe',
     '/alegra': 'https://app.alegra.com/user/register/country/mexico?coupon=CNTODOCONTA'
   },
-  experimental: {
-    assets: true,
-    env: {
-      schema: {
-        SENDY_API_URL: envField.string({context: "client", access: "public"}),
-        SENDY_API_KEY: envField.string({context: "client", access: "public"}),
-        SENDY_LIST_ID: envField.string({context: "client", access: "public"}),
-        WA_NUMBER: envField.string({context: "client", access: "public"})
-      }
+  env: {
+    schema: {
+      SENDY_API_URL: envField.string({context: "client", access: "public"}),
+      SENDY_API_KEY: envField.string({context: "client", access: "public"}),
+      SENDY_LIST_ID: envField.string({context: "client", access: "public"}),
+      WA_NUMBER: envField.string({context: "client", access: "public"})
     }
   }
 });

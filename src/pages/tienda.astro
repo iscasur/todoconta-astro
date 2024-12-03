@@ -16,7 +16,7 @@ const pageTitle = "Tienda - Todoconta";
             const {title, img, rating, price} = item.data;
 
             return (
-              <a href=`producto/${item.slug}`>
+              <a href=`producto/${item.id}`>
                 <article class="prose dark:prose-invert">
                   <img src={img} alt={title} class="w-full h-auto rounded-lg"/>
                   <h2>{title}</h2>

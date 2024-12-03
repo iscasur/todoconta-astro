@@ -18,7 +18,7 @@ const data = sortedPosts.map((item) => {
   return {
     title: item.data.title,
     description: item.data.description,
-    href: `/${item.slug}`,
+    href: `/${item.data.slug}`,
     cta: 'Leer mas…',
     image: item.data.img,
   } as SnapItem;
