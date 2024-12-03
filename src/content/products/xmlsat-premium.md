@@ -6,7 +6,7 @@ price:
   value: 2200
   currency: MXN
 urlToBuy: https://buy.stripe.com/28o4h4aGV7Di9QQbIV
-img: https://s3.us-east-1.amazonaws.com/todoconta.com/uploads/store/xmlsat-premium.png
+img: ../../assets/store/xmlsat-premium.png
 description: La solución más completa para la administración de CFDI. Diseñado para empresas y profesionales que necesitan máxima capacidad de procesamiento y descarga masiva de comprobantes fiscales.
 categories: ["Construsoft"]
 hasDemo: true

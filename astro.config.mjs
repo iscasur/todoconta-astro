@@ -33,6 +33,7 @@ export default defineConfig({
     '/alegra': 'https://app.alegra.com/user/register/country/mexico?coupon=CNTODOCONTA'
   },
   experimental: {
+    assets: true,
     env: {
       schema: {
         SENDY_API_URL: envField.string({context: "client", access: "public"}),

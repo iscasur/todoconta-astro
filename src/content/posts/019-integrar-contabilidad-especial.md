@@ -6,7 +6,7 @@ description: El contribuyente está obligado a integrar su contabilidad conforme
 publishedDate: 2020-02-12
 tags: [ "CFF", "Registros contables" ]
 categories: [ "Contabilidad" ]
-img: https://s3.us-east-1.amazonaws.com/todoconta.com/uploads/retro-calculator-desk-yellow.jpeg
+img: ../../assets/retro-calculator-desk-yellow.jpeg
 ---
 
 

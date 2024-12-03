@@ -4,7 +4,7 @@ seoTitle: 3 Apps para gestionar un despacho contable
 slug: apps-despacho-contable
 description: Debemos utilizar la tecnología a nuestro favor y con ello digitalizar nuestro despacho contable automatizando tareas con estas 3 apps.
 publishedDate: 2023-09-05
-img: https://s3.us-east-1.amazonaws.com/todoconta.com/uploads/declaracion-impuestos-servicios-profesionales.jpeg
+img: ../../assets/declaracion-impuestos-servicios-profesionales.jpeg
 ---
 Hoy en día existen múltiples apps que nos permiten digitalizar tu despacho contable, y trabajar prácticamente desde cualquier lugar, de acuerdo a nuestras posibilidades con los horarios.
 

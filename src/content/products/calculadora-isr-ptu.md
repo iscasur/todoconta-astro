@@ -4,7 +4,7 @@ seoTitle: "Calculadora de ISR para PTU 2024: Simplifica el Cálculo de Retencion
 price:
   value: 99
   currency: MXN
-img: https://s3.us-east-1.amazonaws.com/todoconta.com/uploads/store/excel-calculadora-ptu.png
+img: ../../assets/store/excel-calculadora-ptu.png
 description: Optimiza el cálculo del ISR retenido por pagos de PTU con esta herramienta diseñada para cumplir con las disposiciones del artículo 174 del Reglamento del ISR. Fácil de usar, precisa y lista para ayudarte a minimizar el impacto fiscal en tus trabajadores.
 categories: [ "Templates" ]
 ---

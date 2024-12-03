@@ -6,7 +6,7 @@ description: Debemos emitir una factura por las operaciones que realicemos, sin 
 publishedDate: 2019-08-08
 tags: ["CFDI", "CFF"]
 categories: ["Comprobantes fiscales"]
-img: https://s3.us-east-1.amazonaws.com/todoconta.com/uploads/calendario-tiempo-time-dias.jpg
+img: ../../assets/calendario-tiempo-time-dias.jpg
 ---
 
 

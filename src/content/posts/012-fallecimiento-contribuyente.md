@@ -6,7 +6,7 @@ description: Las obligaciones fiscales y sus efectos fiscales siguen presenten a
 publishedDate: 2015-08-25
 tags: ["Fallecimiento"]
 categories: ["Impuestos"]
-img: https://s3.us-east-1.amazonaws.com/todoconta.com/uploads/planta-muerta-gris.jpeg
+img: ../../assets/planta-muerta-gris.jpeg
 ---
 
 
@@ -312,10 +312,10 @@ Este formato es de fácil llenado y en las oficinas del SAT te pueden apoyar en 
 
 
 
-![](https://s3.us-east-1.amazonaws.com/todoconta.com/uploads/comentarios-forma-oficial-RX_1.jpeg)
+![](../../assets/comentarios-forma-oficial-RX_1.jpeg)
 
 
-![](https://s3.us-east-1.amazonaws.com/todoconta.com/uploads/comentarios-forma-oficial-RX_2.jpeg)
+![](../../assets/comentarios-forma-oficial-RX_2.jpeg)
 
 
 

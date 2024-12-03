@@ -1,6 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import {getCollection, render} from 'astro:content'
+import { Image } from "astro:assets";
 import PostCTA from "../components/blog/PostCTA.astro";
 import AuthorBio from "../components/blog/AuthorBio.astro";
 import {WA_NUMBER, SENDY_LIST_ID} from "astro:env/client";
@@ -51,14 +52,7 @@ const metaTags: MetaTagsProps = {
         <time datetime={publishedDate.toLocaleString()} class="text-xs">{date}</time>
       </header>
       <p class="lead">{description}</p>
-        {img && (
-          <figure>
-            <img src={img} alt={title}/>
-            <figcaption class="hidden">
-                {description}
-            </figcaption>
-          </figure>
-        )}
+      <Image src={img} alt={title} format="avif" quality="mid" width={800} height={600} />
       <section>
         <SubscribeWidget listId={SENDY_LIST_ID}
                          ctaText="¡Quiero la plantilla!"

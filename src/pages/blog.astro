@@ -1,6 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import {getCollection} from 'astro:content'
+import { Image } from "astro:assets";
 
 const posts = await getCollection('posts');
 const sortedPosts = posts.sort((a, b) => new Date(b.data.publishedDate).getTime() - new Date(a.data.publishedDate).getTime());
@@ -14,7 +15,7 @@ const pageTitle = "Blog - Todoconta"
           <a href={item.slug}>
             <article class="prose dark:prose-invert">
               <h2>{item.data.title}</h2>
-              <img src={item.data.img} alt={item.data.title} class="w-fit h-auto" />
+              <Image src={item.data.img} alt={item.data.title} format="avif" quality="low" class="w-fit h-auto" />
               <p>{item.data.description}</p>
             </article>
           </a>

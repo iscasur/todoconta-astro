@@ -6,7 +6,7 @@ description: Las empresas deberán presentar un aviso de actualización de socio
 publishedDate: 2020-06-24
 tags: ["CFF", "Servicios"]
 categories: ["Trámites y servicios"]
-img: https://s3.us-east-1.amazonaws.com/todoconta.com/uploads/socios-accionistas-trabajadores-partners-shareholders-worker.jpeg
+img: ../../assets/socios-accionistas-trabajadores-partners-shareholders-worker.jpeg
 ---
 
 

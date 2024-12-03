@@ -6,7 +6,7 @@ description: Saber cuándo debes pagar los impuestos te evitará los recargos y 
 publishedDate: 2011-11-22
 tags: ["IVA", "ISR", "Servicios", "Impuestos 101"]
 categories: ["Impuestos"]
-img: https://s3.us-east-1.amazonaws.com/todoconta.com/uploads/calendario-tiempo-time-dias.jpg
+img: ../../assets/calendario-tiempo-time-dias.jpg
 ---
 
 

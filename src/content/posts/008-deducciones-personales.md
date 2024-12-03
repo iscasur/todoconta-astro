@@ -6,7 +6,7 @@ description: Las deducciones personales son un derecho que puede beneficiarte co
 publishedDate: 2013-05-11
 tags: ["Deducciones personales", "Impuestos 101"]
 categories: ["Impuestos"]
-img: https://s3.us-east-1.amazonaws.com/todoconta.com/uploads/impuestos-comprobantes-fiscales-deducciones-calculadora.jpeg
+img: ../../assets/impuestos-comprobantes-fiscales-deducciones-calculadora.jpeg
 ---
 
 

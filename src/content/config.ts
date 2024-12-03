@@ -2,15 +2,18 @@ import { defineCollection, z } from "astro:content";
 
 const posts = defineCollection({
   type: "content",
-  schema: z.object({
-    title: z.string(),
-    seoTitle: z.string().optional().nullable(),
-    description: z.string(),
-    publishedDate: z.date(),
-    img: z.string().url().optional(),
-    tags: z.array(z.string()).optional(),
-    categories: z.array(z.string()).optional().nullable(),
-  }),
+  schema: ({ image }) =>
+    z.object({
+      title: z.string(),
+      seoTitle: z.string().optional().nullable(),
+      description: z.string(),
+      publishedDate: z.date(),
+      img: image().refine((img) => img.width >= 600, {
+        message: "Cover image must be at least 600 pixels wide",
+      }),
+      tags: z.array(z.string()).optional(),
+      categories: z.array(z.string()).optional().nullable(),
+    }),
 });
 
 const products = defineCollection({

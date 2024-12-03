@@ -6,7 +6,7 @@ description: Este ajuste anual se debe al reconocimiento de la inflación ocurri
 publishedDate: 2015-03-19
 tags: ["ISR", "Deducciones autorizadas", "Inflación"]
 categories: ["Impuestos"]
-img: https://s3.us-east-1.amazonaws.com/todoconta.com/uploads/calculos-trabajando-finanzas-contadores-analisis.jpeg
+img: ../../assets/calculos-trabajando-finanzas-contadores-analisis.jpeg
 ---
 
 
