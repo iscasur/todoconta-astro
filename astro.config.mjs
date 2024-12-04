@@ -8,7 +8,7 @@ export default defineConfig({
   site: "https://todoconta.com",
   integrations: [tailwind(), partytown({
     config: {
-      forward: ["dataLayer.push", "fbq"],
+      forward: ["dataLayer.push"],
     }
   })],
   redirects: {

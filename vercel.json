@@ -1,8 +1,0 @@
-{
-  "rewrites": [
-    {
-      "source": "/proxy-connect-facebook",
-      "destination": "https://connect.facebook.net"
-    }
-  ]
-}
