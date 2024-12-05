@@ -59,6 +59,7 @@ const products = defineCollection({
       .nullable(),
     categories: z.array(z.string()).optional().nullable(),
     hasDemo: z.boolean().optional(),
+    listIdSendy: z.string().optional(),
   }),
 });
 

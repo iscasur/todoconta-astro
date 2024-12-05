@@ -1,0 +1,12 @@
+---
+interface Props {
+    title: string;
+}
+
+const {title} = Astro.props
+---
+<button id="getDemo" data-title={title} class="text-primary dark:text-white text-center no-underline mt-4 block">Solicitar demo</button>
+
+<script>
+    import '../scripts/getDemo.js'
+</script>

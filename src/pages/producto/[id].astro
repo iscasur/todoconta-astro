@@ -4,6 +4,8 @@ import Layout from "../../layouts/Layout.astro";
 import Rating from "../../components/Rating.astro";
 import {formatPrice} from "../../utils/numbers";
 import {WA_NUMBER} from "astro:env/client";
+import GetDemo from "../../components/GetDemo.astro";
+import SubscribeWidget from "../../components/SubscribeWidget.astro";
 
 interface MetaTagsProps {
     description?: string;
@@ -28,7 +30,7 @@ export async function getStaticPaths() {
 
 const {product} = Astro.props;
 const {data} = product
-const {title, seoTitle, rating, price, img, description, video, testimonials, hasDemo} = data;
+const {title, seoTitle, rating, price, img, description, video, testimonials, hasDemo, listIdSendy} = data;
 
 const {Content} = await render(product)
 const pageTitle = `${seoTitle ? seoTitle : title} - Todoconta`
@@ -48,7 +50,7 @@ const whatsAppMessageToDownload = encodeURIComponent(
 )
 ---
 <Layout title={pageTitle} metaTags={metaTags}>
-  <div class="container mx-auto md:max-w-3xl p-4 pb-16 md:pb-32">
+  <div class="container mx-auto md:max-w-4xl p-4 pb-16 md:pb-32">
     <article class="flex gap-4 flex-col">
       <section class="md:grid md:grid-cols-2 md:gap-10 md:items-center">
         <div class="columns-1">
@@ -71,7 +73,7 @@ const whatsAppMessageToDownload = encodeURIComponent(
 
           <div class="cta-buttons mt-4 flex flex-col sticky">
             <a href={`https://wa.me/${WA_NUMBER}?text=${whatsAppMessageToBuy}`}
-               class="bg-secondary-green text-white no-underline text-center py-2 px-6 rounded-lg hover:bg-primary-light inline-block dark:bg-secondary-green"
+               class="bg-secondary-green text-white no-underline text-center py-4 px-6 rounded-lg hover:bg-primary-light inline-block dark:bg-secondary-green"
                target="_blank"
                rel="noopener noreferrer"
                onclick="gtag('event', 'click', {
@@ -80,7 +82,9 @@ const whatsAppMessageToDownload = encodeURIComponent(
                    value: price,
                })"
             >Comprar</a>
-              {hasDemo && (
+              {hasDemo && listIdSendy ? (
+                <GetDemo title={title}/>
+              ) : (
                 <a href={`https://wa.me/${WA_NUMBER}?text=${whatsAppMessageToDownload}`}
                    class="text-primary text-center no-underline mt-4 block"
                    target="_blank"
@@ -93,8 +97,21 @@ const whatsAppMessageToDownload = encodeURIComponent(
               )}
           </div>
         </div>
-
       </section>
+
+        {listIdSendy && (
+          <section id="demoWidget" class="hidden">
+            <SubscribeWidget listId={listIdSendy}
+                             ctaText="¡Quiero probar el demo!"
+                             title={`Prueba ${title} sin compromiso`}
+                             description="Descarga nuestra versión demo gratuita, y utilízala sin limitaciones. Si no cumple con tus expectativas, elimínala de tu equipo sin preocupaciones."
+                             disclaimer="¡Aunque estamos seguros de que no querrás hacerlo! 😉"
+                             hasNameField
+                             style={"p-8 my-4 rounded-lg bg-gray-100 text-center"}
+            />
+          </section>
+        )}
+
 
       <section class="product-description prose dark:prose-invert mt-8">
         <h2 class="text-2xl font-semibold">Mas información</h2>
