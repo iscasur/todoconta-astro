@@ -14,6 +14,7 @@ vide:
 description: Optimiza la administración masiva de tus comprobantes fiscales (CFDI) y agiliza tu auditoría electrónica con un software poderoso y fácil de usar, compatible con las versiones 3.2, 3.3 y 4.0 del SAT.
 categories: ["Construsoft"]
 hasDemo: true
+listIdSendy: 6HH9LMxo1zmCugKgk64lMg
 ---
 ### Características principales
 

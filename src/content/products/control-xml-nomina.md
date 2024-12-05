@@ -10,6 +10,7 @@ img: https://s3.us-east-1.amazonaws.com/todoconta.com/uploads/store/control-xml-
 description: Simplifica el manejo de tus CFDI de Nómina con Excel.
 categories: ["Software"]
 hasDemo: true
+listIdSendy: qFOzRClf35ZFwtpAIdD9cQ
 ---
 **Control XML Nómina** es una herramienta poderosa y fácil de usar diseñada específicamente para gestionar tus archivos CFDI y PDF de recibos de nómina. Totalmente automatizada y basada en Excel, esta solución te permite convertir, validar y organizar tus archivos de nómina con solo unos clics.
 
