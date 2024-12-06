@@ -10,7 +10,7 @@ img: https://s3.us-east-1.amazonaws.com/todoconta.com/uploads/store/conciliarep.
 description: Concilia tus CFDI de forma práctica, rápida y sin complicaciones.
 categories: ["Software"]
 hasDemo: true
-listIdSendy: toRT6MVWTzkYpK5xHsgBNg
+#listIdSendy: toRT6MVWTzkYpK5xHsgBNg
 ---
 **ConciliaREP** es una herramienta diseñada para simplificar la conciliación de tus CFDI de complementos de pago (REP) contra tus CFDI de facturas. Basada en Excel y completamente automatizada, esta herramienta te permitirá organizar y confrontar tu información de manera eficiente y sin errores.
 
