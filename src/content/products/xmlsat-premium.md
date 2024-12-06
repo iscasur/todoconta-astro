@@ -10,6 +10,7 @@ img: https://s3.us-east-1.amazonaws.com/todoconta.com/uploads/store/xmlsat-premi
 description: La solución más completa para la administración de CFDI. Diseñado para empresas y profesionales que necesitan máxima capacidad de procesamiento y descarga masiva de comprobantes fiscales.
 categories: ["Construsoft"]
 hasDemo: true
+listIdSendy: XTuoImkImRFKKc8tYkxCsg
 ---
 ### Características Exclusivas de la Versión Premium:
 

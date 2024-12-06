@@ -10,6 +10,7 @@ img: https://s3.us-east-1.amazonaws.com/todoconta.com/uploads/store/control-xml.
 description: Control total de tus XML y PDF directamente desde Excel, fácil, rápido y confiable.
 categories: ["Software"]
 hasDemo: true
+#listIdSendy: tVkCRsI4LGA9O1qfXMF2WQ
 ---
 ¿Te cuesta trabajo manejar y organizar tus archivos CFDI? Con **Control XML-CFDI**, convierte, organiza y valida tus facturas electrónicas directamente desde Excel, sin necesidad de aprender nuevos softwares.
 
