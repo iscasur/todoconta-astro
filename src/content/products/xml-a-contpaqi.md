@@ -10,7 +10,7 @@ img: https://s3.us-east-1.amazonaws.com/todoconta.com/uploads/store/xml-a-contpa
 description: Carga masiva de pólizas en minutos, sin estrés ni complicaciones.
 categories: ["Software"]
 hasDemo: true
-#listIdSendy: qba892RMpw1R5OFmNc763D4nVA
+listIdSendy: qba892RMpw1R5OFmNc763D4nVA
 ---
 ¿Estás cansado de perder tiempo cargando manualmente tus pólizas en CONTPAQi? Con **XML a CONTPAQi**, puedes automatizar el proceso, ahorrar tiempo y reducir errores en tu contabilidad.
 
