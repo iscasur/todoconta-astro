@@ -76,7 +76,7 @@ time {
 }
 
 .footnotes {
-    @apply border-t-2
+    @apply border-t
 }
 
 .footnotes > h2 {
